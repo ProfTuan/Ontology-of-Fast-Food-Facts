@@ -1,2304 +1,1978 @@
-@prefix : <http://sbmi.uth.edu/ontology/offf#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://sbmi.uth.edu/ontology/offf> .
+Prefix(:=<http://sbmi.uth.edu/ontology/offf#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://sbmi.uth.edu/ontology/offf>
+Import(<http://www.w3.org/2004/02/skos/core>)
+Annotation(<http://purl.org/dc/terms/creator> "Jing Wang, Tuan Amith, Cui Tao")
+Annotation(<http://purl.org/dc/terms/description> "an ontology of nutritional information from major fast food companies")
+Annotation(<http://purl.org/dc/terms/title> "Ontology of Fast Food Facts (OFFF)")
+
+Declaration(Class(:All_Natural_Lemonade))
+Declaration(Class(:Allergens))
+Declaration(Class(:Americano))
+Declaration(Class(:Annatto_Ingredient))
+Declaration(Class(:Apple_Bites))
+Declaration(Class(:Apple_Juice))
+Declaration(Class(:Apple_Pecan_Chicken_Salad))
+Declaration(Class(:Apple_Pecan_Chicken_Salad_Dressing))
+Declaration(Class(:Apple_Pie))
+Declaration(Class(:Apple_Slices))
+Declaration(Class(:Apple_and_Cranberry_Chicken_Salad))
+Declaration(Class(:Applesauce))
+Declaration(Class(:BBQ_Sauce))
+Declaration(Class(:Bacon_Egg_and_Cheese_Bagel))
+Declaration(Class(:Bacon_Egg_and_Cheese_Biscuit))
+Declaration(Class(:Bacon_Egg_and_Cheese_McGriddles))
+Declaration(Class(:Bacon_Egg_and_Swiss_Croissant))
+Declaration(Class(:Bacon_Jalapeno_Cheeseburger))
+Declaration(Class(:Bacon_Jalapeno_Chicken_Sandwich))
+Declaration(Class(:Bacon_Lettuce_and_Tomato_Sandwich))
+Declaration(Class(:Bacon_and_Cheese_Hamburger))
+Declaration(Class(:Banana))
+Declaration(Class(:Banana_Shake))
+Declaration(Class(:Banana_Split))
+Declaration(Class(:Barbecue_Cheeseburger))
+Declaration(Class(:Bean_Burrito))
+Declaration(Class(:Beef_Burrito))
+Declaration(Class(:Beef_Ingredient))
+Declaration(Class(:Beta_Carotene_Ingredient))
+Declaration(Class(:Big_Breakfast))
+Declaration(Class(:Big_Breakfast_Hotcakes))
+Declaration(Class(:Big_Breakfast_with_Hotcakes))
+Declaration(Class(:Biscuit_and_Gravy))
+Declaration(Class(:Biscuit_with_Bacon))
+Declaration(Class(:Biscuit_with_Sausage))
+Declaration(Class(:Black_Tea_Ingredient))
+Declaration(Class(:Blizzard_Cake))
+Declaration(Class(:Blizzard_Treat))
+Declaration(Class(:Blue_Raspberry_Slushie))
+Declaration(Class(:Breakfast_Bacon))
+Declaration(Class(:Breakfast_Baconator))
+Declaration(Class(:Breakfast_Bagel_Sandwich))
+Declaration(Class(:Breakfast_Biscuit_Sandwich))
+Declaration(Class(:Breakfast_Burritos))
+Declaration(Class(:Breakfast_Oats_Item))
+Declaration(Class(:Breakfast_Platter))
+Declaration(Class(:Breakfast_Platter_Whataburgers))
+Declaration(Class(:Breakfast_Sandwich))
+Declaration(Class(:Breakfast_Sausage_Burrito))
+Declaration(Class(:Brownie))
+Declaration(Class(:Brownie_and_Oreo_Cupfection))
+Declaration(Class(:Buster_Bar))
+Declaration(Class(:Buttermilk_Crispy_Chicken_Sandwich))
+Declaration(Class(:Cake))
+Declaration(Class(:Calcium))
+Declaration(Class(:Calories_Data))
+Declaration(Class(:Calories_Fat_Data))
+Declaration(Class(:Canola_Oil_ingredient))
+Declaration(Class(:Cappuccino))
+Declaration(Class(:Caramel_Cappuccino))
+Declaration(Class(:Caramel_Frappe))
+Declaration(Class(:Caramel_Latte))
+Declaration(Class(:Caramel_Macchiato))
+Declaration(Class(:Caramel_Mocha))
+Declaration(Class(:Caramel_MooLatte))
+Declaration(Class(:Caramel_Shake))
+Declaration(Class(:Caramel_Sundae))
+Declaration(Class(:Carbohydrates_Data))
+Declaration(Class(:Cheese_Curds))
+Declaration(Class(:Cheese_Rice_and_Bean_Burrito))
+Declaration(Class(:Cheese_ingredient))
+Declaration(Class(:Cheeseburger))
+Declaration(Class(:Chicken_BLT_Salad))
+Declaration(Class(:Chicken_Bacon_Ranch_Artisan-Style_Sandwich))
+Declaration(Class(:Chicken_Biscuit))
+Declaration(Class(:Chicken_Burrito))
+Declaration(Class(:Chicken_Ingredient))
+Declaration(Class(:Chicken_McNuggets))
+Declaration(Class(:Chicken_Noodle_Soup_Sides))
+Declaration(Class(:Chicken_Nuggets))
+Declaration(Class(:Chicken_Salad))
+Declaration(Class(:Chicken_Sandwich))
+Declaration(Class(:Chicken_Strip))
+Declaration(Class(:Chicken_Strip_Basket))
+Declaration(Class(:Chili_Cheese_Hot_Dog))
+Declaration(Class(:Choco_Brownie_Treatzza_Pizza))
+Declaration(Class(:Choco_Brownie_Xtreme_Blizzard_Cake))
+Declaration(Class(:Chocolate_Cake_Shake))
+Declaration(Class(:Chocolate_Chip_Cookie))
+Declaration(Class(:Chocolate_Chunk_Cookie))
+Declaration(Class(:Chocolate_Dipped_Cone))
+Declaration(Class(:Chocolate_Frosty_Cookie_Sundae))
+Declaration(Class(:Chocolate_Malt))
+Declaration(Class(:Chocolate_Shake))
+Declaration(Class(:Chocolate_Sundae))
+Declaration(Class(:Cholesterol_Data))
+Declaration(Class(:Cinnamon_Roll))
+Declaration(Class(:Citric_Acid_Ingredient))
+Declaration(Class(:Classic_Bacon_Egg_and_Cheese_Sandwich))
+Declaration(Class(:Classic_Sausage_Egg_and_Cheese_Sandwich))
+Declaration(Class(:Cobb_Salad))
+Declaration(Class(:Cocoa_Cola_Soft_Drink))
+Declaration(Class(:Coffee))
+Declaration(Class(:Cold_Coffee))
+Declaration(Class(:Cone))
+Declaration(Class(:Cone_Kids_Dairy_Queen))
+Declaration(Class(:Cookie))
+Declaration(Class(:Cookie_Dough_Blizzard_Cake))
+Declaration(Class(:Cotton_Candy_Dipped_Cone))
+Declaration(Class(:Cream_Ingredient))
+Declaration(Class(:Crispy_Chicken_BLT))
+Declaration(Class(:Crispy_Chicken_Nuggets))
+Declaration(Class(:Crispy_Chicken_Sandwich))
+Declaration(Class(:Croissant_Sandwich))
+Declaration(Class(:Crunch_Taco))
+Declaration(Class(:Crunchy_Taco_Supreme))
+Declaration(Class(:Cucumbers_Ingredient))
+Declaration(Class(:Culture_Ingredient))
+Declaration(Class(:DQ_Treatzza_Pizza))
+Declaration(Class(:Dairy_Queen_Signature_All_Ocassion_Round_Cake))
+Declaration(Class(:Dairy_Queen_Signature_All_Ocassion_Sheet_Cake))
+Declaration(Class(:Dark_Soda))
+Declaration(Class(:Dextrose_Ingredient))
+Declaration(Class(:Diet_Coke_Soft_Drink))
+Declaration(Class(:Diet_Soft_Drink))
+Declaration(Class(:Dietary_Fibre_Data))
+Declaration(Class(:Dilly_Bar))
+Declaration(Class(:Dipped_Strawberry_Cake_Cupfection))
+Declaration(Class(:Double_Patty_Cheese_Burger))
+Declaration(Class(:Double_Patty_Hamburger))
+Declaration(Class(:Double_Quarter_Pounder_with_Cheese))
+Declaration(Class(:Dr_Pepper_Shake))
+Declaration(Class(:Dr_Pepper_Soft_Drink))
+Declaration(Class(:Egg_McMuffin))
+Declaration(Class(:Egg_and_Cheese_Biscuit))
+Declaration(Class(:Enzymes_Ingredient))
+Declaration(Class(:Fanta_Soft_Drink))
+Declaration(Class(:Fast_Food))
+Declaration(Class(:Fast_Food_Beverage))
+Declaration(Class(:Fast_Food_Breakfast_Item))
+Declaration(Class(:Fast_Food_Burrito))
+Declaration(Class(:Fast_Food_Chicken))
+Declaration(Class(:Fast_Food_Condiment))
+Declaration(Class(:Fast_Food_Dessert))
+Declaration(Class(:Fast_Food_Salad))
+Declaration(Class(:Fast_Food_Sandwich))
+Declaration(Class(:Fast_Food_Sides))
+Declaration(Class(:Fast_Food_Taco))
+Declaration(Class(:Fat_Data))
+Declaration(Class(:Fish_Sandwich))
+Declaration(Class(:Flour_Ingredient))
+Declaration(Class(:Food))
+Declaration(Class(:Food_Ingredient))
+Declaration(Class(:Frappe))
+Declaration(Class(:French_Vanilla_Cappuccino))
+Declaration(Class(:French_Vanilla_Latte))
+Declaration(Class(:Fries))
+Declaration(Class(:Frosted_Coffee))
+Declaration(Class(:Frosted_Lemonade))
+Declaration(Class(:Fruit))
+Declaration(Class(:Fruit_Cup))
+Declaration(Class(:Fruit_Juice))
+Declaration(Class(:Fruit_Punch_Slushie))
+Declaration(Class(:Fruit_and_Maple_Oatmeal))
+Declaration(Class(:Fudge_Stuffed_Cookie))
+Declaration(Class(:Garden_Herb_Ranch))
+Declaration(Class(:Garden_Salad))
+Declaration(Class(:Grilled_Asiago_Ranch_Club))
+Declaration(Class(:Grilled_Avocado_BLT_Chicken_Sandwich))
+Declaration(Class(:Grilled_Bacon_Jalapeno_Chicken_Sandwich))
+Declaration(Class(:Grilled_Barbecue_Chicken_Sandwich))
+Declaration(Class(:Grilled_Chicken_Sandwich))
+Declaration(Class(:Grilled_Steak_Soft_Taco))
+Declaration(Class(:Gum_Arabic_Ingredient))
+Declaration(Class(:Hamburger))
+Declaration(Class(:Hamburger_with_Bacon))
+Declaration(Class(:Hard_Taco))
+Declaration(Class(:Hash_Brown_Sticks))
+Declaration(Class(:Hash_Browns))
+Declaration(Class(:Heath_Treatzza_Pizza))
+Declaration(Class(:High_Fructose_Corn_Syrup_Ingredient))
+Declaration(Class(:Homestyle_Asiago_Ranch_Chicken_Club))
+Declaration(Class(:Homestyle_Avocado_BLT_Chicken_Sandwich))
+Declaration(Class(:Homestyle_Bacon_Jalapeno_Chicken_Sandwich))
+Declaration(Class(:Homestyle_Barbeque_Chicken_Sandwich))
+Declaration(Class(:Homestyle_Chicken_Sandwich))
+Declaration(Class(:Honey_BBQ_Glazed_Chicken_Strip_Basket))
+Declaration(Class(:Honey_BBQ_Glazed_Chicken_Strip_Basket_Combo))
+Declaration(Class(:Honey_Mustard))
+Declaration(Class(:Hot_Chocolate))
+Declaration(Class(:Hot_Desserts_a_la_Mode))
+Declaration(Class(:Hot_Dog))
+Declaration(Class(:Hot_Fudge_Shake))
+Declaration(Class(:Hot_Fudge_Sundae))
+Declaration(Class(:Hotcakes))
+Declaration(Class(:Hotcakes_Breakfast))
+Declaration(Class(:Hotcakes_and_Sausages))
+Declaration(Class(:Ice_Cream))
+Declaration(Class(:Ice_Cream_Bar))
+Declaration(Class(:Ice_Cream_Cake))
+Declaration(Class(:Ice_Cream_Sandwich))
+Declaration(Class(:Iced_Caramel_Coffee))
+Declaration(Class(:Iced_Caramel_Macchiato))
+Declaration(Class(:Iced_Caramel_Mocha))
+Declaration(Class(:Iced_Coffee))
+Declaration(Class(:Iced_French_Vanilla_Coffee))
+Declaration(Class(:Iced_French_Vanilla_Latte))
+Declaration(Class(:Iced_Latte))
+Declaration(Class(:Iced_Mocha))
+Declaration(Class(:Iced_Tea))
+Declaration(Class(:Iron))
+Declaration(Class(:Jalapeno_and_Cheese_Whataburger))
+Declaration(Class(:Jr_Cheeseburger))
+Declaration(Class(:Jr_Cheeseburger_Deluxe))
+Declaration(Class(:Julius_Original))
+Declaration(Class(:Kale_Crunch_Side))
+Declaration(Class(:Lactic_Acid_Ingredient))
+Declaration(Class(:Latte))
+Declaration(Class(:Lemon_Pie))
+Declaration(Class(:Lemonade))
+Declaration(Class(:Lemonade_Twisty_Misty_Slush))
+Declaration(Class(:Lettuce_Ingredient))
+Declaration(Class(:Light_Soda))
+Declaration(Class(:Macchiato))
+Declaration(Class(:Macorni_and_Cheese))
+Declaration(Class(:Maltodextrin_Ingredient))
+Declaration(Class(:Mango_Passion_Tea_Lemonade))
+Declaration(Class(:Mango_Pineapple_Smoothie))
+Declaration(Class(:Maple_Bacon_Chicken_Croissant))
+Declaration(Class(:McGriddles))
+Declaration(Class(:McMuffin))
+Declaration(Class(:Milk))
+Declaration(Class(:Milk_Ingredient))
+Declaration(Class(:Minerals_Data))
+Declaration(Class(:Mini_Blizzard_Cake))
+Declaration(Class(:Mix_by_Sprite_Tropic_Berry))
+Declaration(Class(:Mocha))
+Declaration(Class(:Mocha_Frappe))
+Declaration(Class(:Mocha_MooLatte))
+Declaration(Class(:Mushroom_Swiss_Burger))
+Declaration(Class(:Mustard))
+Declaration(Class(:Mustard_Seed_Ingredient))
+Declaration(Class(:Nacho_Cheese_Doritos_Loco_Taco))
+Declaration(Class(:Nacho_Cheese_Doritos_Locos_Taco))
+Declaration(Class(:Natural_Flavors))
+Declaration(Class(:Non-Dairy_Dilly_Bar))
+Declaration(Class(:NutritionalFact))
+Declaration(Class(:Nutritional_Component))
+Declaration(Class(:Oatmeal_Bar))
+Declaration(Class(:Onion_Rings))
+Declaration(Class(:Onions_Ingredient))
+Declaration(Class(:Orange_Juice))
+Declaration(Class(:Orange_Julius_Original))
+Declaration(Class(:Oreo_Blizzard_Cake))
+Declaration(Class(:Oreo_Mini))
+Declaration(Class(:Organic_Apple_Juice))
+Declaration(Class(:Pancake_Platter_Whataburgers))
+Declaration(Class(:Pancakes))
+Declaration(Class(:Paprika_Ingredient))
+Declaration(Class(:Parmesan_Caesar_Chicken))
+Declaration(Class(:Parmesan_Caesar_Chicken_Salad_Dressing))
+Declaration(Class(:Peach_Lemonade))
+Declaration(Class(:Peanut_Butter_Parfait))
+Declaration(Class(:Peanut_Butter_Shake))
+Declaration(Class(:Peanut_Butter_Sundae))
+Declaration(Class(:Peanut_Oil_Ingredient))
+Declaration(Class(:Pepper_Ingredient))
+Declaration(Class(:Pie))
+Declaration(Class(:Pineapple_Sundae))
+Declaration(Class(:Pink_Lemonade_Slushie))
+Declaration(Class(:Potassium))
+Declaration(Class(:Potassium_Sorbate_Ingredient))
+Declaration(Class(:Potatoes_Ingredient))
+Declaration(Class(:Pretzel))
+Declaration(Class(:Pretzel_Sticks_with_Zesty_Queso))
+Declaration(Class(:Protein_Data))
+Declaration(Class(:Quarter_Pound_Hamburger))
+Declaration(Class(:Ranch))
+Declaration(Class(:Raspberry_Fudge_Bliss_Blizzard_Cake))
+Declaration(Class(:Reese_Peanut_Butter_Cup_Blizzard_Cake))
+Declaration(Class(:Royal_Treats))
+Declaration(Class(:Salad_Dressing))
+Declaration(Class(:Salt_Ingredient))
+Declaration(Class(:Saturated_Fat_Data))
+Declaration(Class(:Sausage_Biscuit))
+Declaration(Class(:Sausage_Biscuit_with_Egg))
+Declaration(Class(:Sausage_Egg_and_Cheese_Burrito))
+Declaration(Class(:Sausage_Egg_and_Cheese_McGriddles))
+Declaration(Class(:Sausage_Egg_and_Swiss_Croissant))
+Declaration(Class(:Sausage_McGriddles))
+Declaration(Class(:Sausage_McMuffin))
+Declaration(Class(:Sausage_McMuffin_with_Egg))
+Declaration(Class(:Seasoned_Potatoes))
+Declaration(Class(:Serving_Size_Data))
+Declaration(Class(:Shake))
+Declaration(Class(:Shredded_Chicken_Burrito))
+Declaration(Class(:Side_Salad))
+Declaration(Class(:Silicon_Dioxide_Ingredient))
+Declaration(Class(:Slushie))
+Declaration(Class(:Smoothie))
+Declaration(Class(:Sodium))
+Declaration(Class(:Sodium_Citrate_Ingredient))
+Declaration(Class(:Sodium_Data))
+Declaration(Class(:Soft_Drink))
+Declaration(Class(:Soft_Taco))
+Declaration(Class(:Soft_Taco_Supreme_Beef_Taco))
+Declaration(Class(:Sorbic_Acid_Ingredient))
+Declaration(Class(:Southwest_Avocado_Chicken_Salad))
+Declaration(Class(:Southwest_Avocado_Chicken_Salad_Dressing))
+Declaration(Class(:Soybean_Oil_Ingredient))
+Declaration(Class(:Spicy_Asiago_Ranch_Club))
+Declaration(Class(:Spicy_Avocado_BLT_Chicken_Sandwich))
+Declaration(Class(:Spicy_Barbeque_Chicken_Sandwich))
+Declaration(Class(:Spicy_Chicken_Nugget))
+Declaration(Class(:Spicy_Chicken_Sandwich))
+Declaration(Class(:Spicy_Potato_Soft_Taco))
+Declaration(Class(:Spicy_Southwest_Salad))
+Declaration(Class(:Sprite_Soft_Drink))
+Declaration(Class(:Sriracha))
+Declaration(Class(:Strawberry))
+Declaration(Class(:Strawberry_Banana_Julius_Original))
+Declaration(Class(:Strawberry_Banana_Smoothie))
+Declaration(Class(:Strawberry_Lemonade))
+Declaration(Class(:Strawberry_Malt))
+Declaration(Class(:Strawberry_Shake))
+Declaration(Class(:Strawberry_Sundae))
+Declaration(Class(:Sugar_Cookie))
+Declaration(Class(:Sugar_Data))
+Declaration(Class(:Sugar_Ingredient))
+Declaration(Class(:Summer_Strawberry))
+Declaration(Class(:Summer_Strawberry_Salad_Dressing))
+Declaration(Class(:Sundae))
+Declaration(Class(:Sunflower_Lecithin_Ingredient))
+Declaration(Class(:Sunflower_Oil_Ingredient))
+Declaration(Class(:Sweet_Tea))
+Declaration(Class(:Sweet_and_Spicy_Sriracha))
+Declaration(Class(:Taco_Salad))
+Declaration(Class(:Taquito_with_Cheese))
+Declaration(Class(:Tea))
+Declaration(Class(:Third_Pound_Double_Patty_Cheeseburger))
+Declaration(Class(:Third_Pound_Hamburger))
+Declaration(Class(:Tiramisu_Shake))
+Declaration(Class(:Tomato_Ingredient))
+Declaration(Class(:Trans_Fat_Data))
+Declaration(Class(:Triple_Chocolate_Brownie))
+Declaration(Class(:Triple_Patty_Hamburger))
+Declaration(Class(:Tropical_Berry_Lemonade))
+Declaration(Class(:Tumeric_Ingredient))
+Declaration(Class(:Turkey_BLT_Sandwich))
+Declaration(Class(:Unsweetened_Tea))
+Declaration(Class(:Vanilla_Frosty_Cookie_Sundae))
+Declaration(Class(:Vanilla_MooLatte))
+Declaration(Class(:Vanilla_Shake))
+Declaration(Class(:Vegetarian_Burrito))
+Declaration(Class(:Vinegar_Ingredient))
+Declaration(Class(:Vitamin_A))
+Declaration(Class(:Vitamin_C))
+Declaration(Class(:Vitamin_D))
+Declaration(Class(:Waffle_Potato_Chips))
+Declaration(Class(:Water_Ingredient))
+Declaration(Class(:Wonder_Woman_Cookie_Collision_Blizzard_Cake))
+Declaration(Class(:Yeast_Ingredient))
+Declaration(Class(:disodium_dihydrogen_pyrophosphate_Ingredient))
+Declaration(Class(<http://sbmi.uth.edu/ontology/offf#Big_Breakfast_McDonald's>))
+Declaration(Class(<http://sbmi.uth.edu/ontology/offf#M&M_DQ_Treatzza_Pizza>))
+Declaration(Class(<http://sbmi.uth.edu/ontology/offf#Reese's_Mini_Blizzard_Cake>))
+Declaration(Class(<http://sbmi.uth.edu/ontology/offf#Reese's_Peanut_Butter_Cups_DQ_Treatzza_Pizza>))
+Declaration(ObjectProperty(:hasAllergens))
+Declaration(ObjectProperty(:hasIngredients))
+Declaration(ObjectProperty(:hasNutritionalComponents))
+Declaration(ObjectProperty(:hasNutritionalFact))
+Declaration(DataProperty(:Amount))
+Declaration(DataProperty(:Amount_in_milligram))
+Declaration(DataProperty(:Dairy))
+Declaration(DataProperty(:Egg))
+Declaration(DataProperty(:Fish))
+Declaration(DataProperty(:Gluten))
+Declaration(DataProperty(:MSG))
+Declaration(DataProperty(:Shellfish))
+Declaration(DataProperty(:Soy))
+Declaration(DataProperty(:Treenuts))
+Declaration(DataProperty(:Weight))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/creator>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :hasAllergens (:hasAllergens)
+
+ObjectPropertyDomain(:hasAllergens :NutritionalFact)
+ObjectPropertyRange(:hasAllergens :Allergens)
+
+# Object Property: :hasIngredients (:hasIngredients)
+
+ObjectPropertyDomain(:hasIngredients :NutritionalFact)
+ObjectPropertyRange(:hasIngredients :Food_Ingredient)
+
+# Object Property: :hasNutritionalComponents (:hasNutritionalComponents)
+
+ObjectPropertyDomain(:hasNutritionalComponents :NutritionalFact)
+ObjectPropertyRange(:hasNutritionalComponents :Nutritional_Component)
+
+# Object Property: :hasNutritionalFact (:hasNutritionalFact)
+
+FunctionalObjectProperty(:hasNutritionalFact)
+ObjectPropertyDomain(:hasNutritionalFact :Food)
+ObjectPropertyRange(:hasNutritionalFact :NutritionalFact)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :Amount (:Amount)
+
+DataPropertyDomain(:Amount :Nutritional_Component)
+
+# Data Property: :Amount_in_milligram (:Amount_in_milligram)
+
+SubDataPropertyOf(:Amount_in_milligram :Amount)
+DataPropertyDomain(:Amount_in_milligram :Nutritional_Component)
+DataPropertyRange(:Amount_in_milligram xsd:integer)
+
+# Data Property: :Dairy (:Dairy)
+
+DataPropertyDomain(:Dairy :Allergens)
+DataPropertyRange(:Dairy xsd:boolean)
+
+# Data Property: :Egg (:Egg)
+
+DataPropertyDomain(:Egg :Allergens)
+DataPropertyRange(:Egg xsd:boolean)
+
+# Data Property: :Fish (:Fish)
+
+DataPropertyDomain(:Fish :Allergens)
+DataPropertyRange(:Fish xsd:boolean)
+
+# Data Property: :Gluten (:Gluten)
+
+DataPropertyDomain(:Gluten :Allergens)
+DataPropertyRange(:Gluten xsd:boolean)
+
+# Data Property: :MSG (:MSG)
+
+DataPropertyDomain(:MSG :Allergens)
+DataPropertyRange(:MSG xsd:boolean)
+
+# Data Property: :Shellfish (:Shellfish)
+
+DataPropertyDomain(:Shellfish :Allergens)
+DataPropertyRange(:Shellfish xsd:boolean)
+
+# Data Property: :Soy (:Soy)
+
+DataPropertyDomain(:Soy :Allergens)
+DataPropertyRange(:Soy xsd:boolean)
+
+# Data Property: :Treenuts (:Treenuts)
+
+DataPropertyDomain(:Treenuts :Allergens)
+DataPropertyRange(:Treenuts xsd:boolean)
+
+# Data Property: :Weight (:Weight)
+
+DataPropertyDomain(:Weight :Serving_Size_Data)
+DataPropertyRange(:Weight xsd:string)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :All_Natural_Lemonade (:All_Natural_Lemonade)
+
+SubClassOf(:All_Natural_Lemonade :Lemonade)
+
+# Class: :Americano (:Americano)
+
+SubClassOf(:Americano :Coffee)
+
+# Class: :Annatto_Ingredient (:Annatto_Ingredient)
+
+SubClassOf(:Annatto_Ingredient :Food_Ingredient)
+
+# Class: :Apple_Bites (:Apple_Bites)
+
+AnnotationAssertion(owl:deprecated :Apple_Bites "true"^^xsd:boolean)
+SubClassOf(:Apple_Bites :Apple_Slices)
+
+# Class: :Apple_Juice (:Apple_Juice)
+
+SubClassOf(:Apple_Juice :Fruit_Juice)
+
+# Class: :Apple_Pecan_Chicken_Salad (:Apple_Pecan_Chicken_Salad)
+
+SubClassOf(:Apple_Pecan_Chicken_Salad :Chicken_Salad)
+
+# Class: :Apple_Pecan_Chicken_Salad_Dressing (:Apple_Pecan_Chicken_Salad_Dressing)
+
+SubClassOf(:Apple_Pecan_Chicken_Salad_Dressing :Salad_Dressing)
+
+# Class: :Apple_Pie (:Apple_Pie)
+
+SubClassOf(:Apple_Pie :Pie)
+
+# Class: :Apple_Slices (:Apple_Slices)
+
+SubClassOf(:Apple_Slices :Fast_Food_Sides)
+
+# Class: :Apple_and_Cranberry_Chicken_Salad (:Apple_and_Cranberry_Chicken_Salad)
+
+SubClassOf(:Apple_and_Cranberry_Chicken_Salad :Chicken_Salad)
+
+# Class: :Applesauce (:Applesauce)
+
+SubClassOf(:Applesauce :Fast_Food_Sides)
+
+# Class: :BBQ_Sauce (:BBQ_Sauce)
+
+SubClassOf(:BBQ_Sauce :Fast_Food_Condiment)
+
+# Class: :Bacon_Egg_and_Cheese_Bagel (:Bacon_Egg_and_Cheese_Bagel)
+
+SubClassOf(:Bacon_Egg_and_Cheese_Bagel :Breakfast_Bagel_Sandwich)
+
+# Class: :Bacon_Egg_and_Cheese_Biscuit (:Bacon_Egg_and_Cheese_Biscuit)
+
+SubClassOf(:Bacon_Egg_and_Cheese_Biscuit :Breakfast_Biscuit_Sandwich)
+
+# Class: :Bacon_Egg_and_Cheese_McGriddles (:Bacon_Egg_and_Cheese_McGriddles)
+
+SubClassOf(:Bacon_Egg_and_Cheese_McGriddles :McGriddles)
+
+# Class: :Bacon_Egg_and_Swiss_Croissant (:Bacon_Egg_and_Swiss_Croissant)
+
+SubClassOf(:Bacon_Egg_and_Swiss_Croissant :Croissant_Sandwich)
+
+# Class: :Bacon_Jalapeno_Cheeseburger (:Bacon_Jalapeno_Cheeseburger)
+
+SubClassOf(:Bacon_Jalapeno_Cheeseburger :Cheeseburger)
+
+# Class: :Bacon_Jalapeno_Chicken_Sandwich (:Bacon_Jalapeno_Chicken_Sandwich)
+
+SubClassOf(:Bacon_Jalapeno_Chicken_Sandwich :Chicken_Sandwich)
+
+# Class: :Bacon_Lettuce_and_Tomato_Sandwich (:Bacon_Lettuce_and_Tomato_Sandwich)
+
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> :Bacon_Lettuce_and_Tomato_Sandwich "BLT Sandwich")
+SubClassOf(:Bacon_Lettuce_and_Tomato_Sandwich :Fast_Food_Sandwich)
+
+# Class: :Bacon_and_Cheese_Hamburger (:Bacon_and_Cheese_Hamburger)
+
+SubClassOf(:Bacon_and_Cheese_Hamburger :Hamburger_with_Bacon)
+
+# Class: :Banana (:Banana)
+
+SubClassOf(:Banana :Fruit)
+
+# Class: :Banana_Shake (:Banana_Shake)
+
+SubClassOf(:Banana_Shake :Shake)
+
+# Class: :Banana_Split (:Banana_Split)
+
+SubClassOf(:Banana_Split :Royal_Treats)
+
+# Class: :Barbecue_Cheeseburger (:Barbecue_Cheeseburger)
+
+SubClassOf(:Barbecue_Cheeseburger :Cheeseburger)
+
+# Class: :Bean_Burrito (:Bean_Burrito)
+
+SubClassOf(:Bean_Burrito :Fast_Food_Burrito)
+
+# Class: :Beef_Burrito (:Beef_Burrito)
+
+SubClassOf(:Beef_Burrito :Fast_Food_Burrito)
+
+# Class: :Beef_Ingredient (:Beef_Ingredient)
+
+SubClassOf(:Beef_Ingredient :Food_Ingredient)
+
+# Class: :Beta_Carotene_Ingredient (:Beta_Carotene_Ingredient)
+
+SubClassOf(:Beta_Carotene_Ingredient :Food_Ingredient)
+
+# Class: :Big_Breakfast (:Big_Breakfast)
+
+SubClassOf(:Big_Breakfast <http://sbmi.uth.edu/ontology/offf#Big_Breakfast_McDonald's>)
+
+# Class: :Big_Breakfast_Hotcakes (:Big_Breakfast_Hotcakes)
+
+SubClassOf(:Big_Breakfast_Hotcakes <http://sbmi.uth.edu/ontology/offf#Big_Breakfast_McDonald's>)
+
+# Class: :Big_Breakfast_with_Hotcakes (:Big_Breakfast_with_Hotcakes)
+
+SubClassOf(:Big_Breakfast_with_Hotcakes :Big_Breakfast)
+
+# Class: :Biscuit_and_Gravy (:Biscuit_and_Gravy)
+
+SubClassOf(:Biscuit_and_Gravy :Breakfast_Biscuit_Sandwich)
+
+# Class: :Biscuit_with_Bacon (:Biscuit_with_Bacon)
+
+SubClassOf(:Biscuit_with_Bacon :Breakfast_Biscuit_Sandwich)
+
+# Class: :Biscuit_with_Sausage (:Biscuit_with_Sausage)
+
+SubClassOf(:Biscuit_with_Sausage :Breakfast_Biscuit_Sandwich)
+
+# Class: :Black_Tea_Ingredient (:Black_Tea_Ingredient)
+
+SubClassOf(:Black_Tea_Ingredient :Food_Ingredient)
+
+# Class: :Blizzard_Cake (:Blizzard_Cake)
+
+AnnotationAssertion(owl:deprecated :Blizzard_Cake "true"^^xsd:boolean)
+SubClassOf(:Blizzard_Cake :Cake)
+
+# Class: :Blizzard_Treat (:Blizzard_Treat)
+
+SubClassOf(:Blizzard_Treat :Fast_Food_Dessert)
+
+# Class: :Blue_Raspberry_Slushie (:Blue_Raspberry_Slushie)
 
-<http://sbmi.uth.edu/ontology/offf> rdf:type owl:Ontology ;
-                                     owl:imports <http://www.w3.org/2004/02/skos/core> ;
-                                     <http://purl.org/dc/terms/creator> "Jing Wang, Tuan Amith, Cui Tao" ;
-                                     <http://purl.org/dc/terms/description> "an ontology of nutritional information from major fast food companies" ;
-                                     <http://purl.org/dc/terms/title> "Ontology of Fast Food Facts (OFFF)" .
+SubClassOf(:Blue_Raspberry_Slushie :Slushie)
 
-#################################################################
-#    Object Properties
-#################################################################
+# Class: :Breakfast_Bacon (:Breakfast_Bacon)
 
-###  http://sbmi.uth.edu/ontology/offf#hasAllergens
-:hasAllergens rdf:type owl:ObjectProperty ;
-              rdfs:domain :NutritionalFact ;
-              rdfs:range :Allergens .
+SubClassOf(:Breakfast_Bacon :Fast_Food_Breakfast_Item)
 
+# Class: :Breakfast_Baconator (:Breakfast_Baconator)
 
-###  http://sbmi.uth.edu/ontology/offf#hasIngredients
-:hasIngredients rdf:type owl:ObjectProperty ;
-                rdfs:domain :NutritionalFact ;
-                rdfs:range :Ingredient .
+SubClassOf(:Breakfast_Baconator :Breakfast_Bacon)
 
+# Class: :Breakfast_Bagel_Sandwich (:Breakfast_Bagel_Sandwich)
 
-###  http://sbmi.uth.edu/ontology/offf#hasNutritionalInfo
-:hasNutritionalInfo rdf:type owl:ObjectProperty ;
-                    rdfs:domain :NutritionalFact ;
-                    rdfs:range :Nutritional_Component .
+SubClassOf(:Breakfast_Bagel_Sandwich :Breakfast_Sandwich)
 
+# Class: :Breakfast_Biscuit_Sandwich (:Breakfast_Biscuit_Sandwich)
 
-#################################################################
-#    Data properties
-#################################################################
+SubClassOf(:Breakfast_Biscuit_Sandwich :Breakfast_Sandwich)
 
-###  http://sbmi.uth.edu/ontology/offf#Amount
-:Amount rdf:type owl:DatatypeProperty ;
-        rdfs:domain :Nutritional_Component .
+# Class: :Breakfast_Burritos (:Breakfast_Burritos)
 
+SubClassOf(:Breakfast_Burritos :Fast_Food_Breakfast_Item)
 
-###  http://sbmi.uth.edu/ontology/offf#Amount_in_mg
-:Amount_in_mg rdf:type owl:DatatypeProperty ;
-              rdfs:subPropertyOf :Amount ;
-              rdfs:domain :Nutritional_Component ;
-              rdfs:range xsd:integer .
+# Class: :Breakfast_Oats_Item (:Breakfast_Oats_Item)
 
+SubClassOf(:Breakfast_Oats_Item :Fast_Food_Breakfast_Item)
 
-###  http://sbmi.uth.edu/ontology/offf#Dairy
-:Dairy rdf:type owl:DatatypeProperty ;
-       rdfs:domain :Allergens ;
-       rdfs:range xsd:boolean .
+# Class: :Breakfast_Platter (:Breakfast_Platter)
 
+SubClassOf(:Breakfast_Platter :Fast_Food_Breakfast_Item)
 
-###  http://sbmi.uth.edu/ontology/offf#Egg
-:Egg rdf:type owl:DatatypeProperty ;
-     rdfs:domain :Allergens ;
-     rdfs:range xsd:boolean .
+# Class: :Breakfast_Platter_Whataburgers (:Breakfast_Platter_Whataburgers)
 
+SubClassOf(:Breakfast_Platter_Whataburgers :Breakfast_Platter)
 
-###  http://sbmi.uth.edu/ontology/offf#Fish
-:Fish rdf:type owl:DatatypeProperty ;
-      rdfs:domain :Allergens ;
-      rdfs:range xsd:boolean .
+# Class: :Breakfast_Sandwich (:Breakfast_Sandwich)
 
+SubClassOf(:Breakfast_Sandwich :Fast_Food_Breakfast_Item)
 
-###  http://sbmi.uth.edu/ontology/offf#Gluten
-:Gluten rdf:type owl:DatatypeProperty ;
-        rdfs:domain :Allergens ;
-        rdfs:range xsd:boolean .
+# Class: :Breakfast_Sausage_Burrito (:Breakfast_Sausage_Burrito)
 
+SubClassOf(:Breakfast_Sausage_Burrito :Breakfast_Burritos)
 
-###  http://sbmi.uth.edu/ontology/offf#MSG
-:MSG rdf:type owl:DatatypeProperty ;
-     rdfs:domain :Allergens ;
-     rdfs:range xsd:boolean .
+# Class: :Brownie (:Brownie)
 
+SubClassOf(:Brownie :Fast_Food_Dessert)
 
-###  http://sbmi.uth.edu/ontology/offf#Shellfish
-:Shellfish rdf:type owl:DatatypeProperty ;
-           rdfs:domain :Allergens ;
-           rdfs:range xsd:boolean .
+# Class: :Brownie_and_Oreo_Cupfection (:Brownie_and_Oreo_Cupfection)
 
+SubClassOf(:Brownie_and_Oreo_Cupfection :Royal_Treats)
 
-###  http://sbmi.uth.edu/ontology/offf#Soy
-:Soy rdf:type owl:DatatypeProperty ;
-     rdfs:domain :Allergens ;
-     rdfs:range xsd:boolean .
+# Class: :Buster_Bar (:Buster_Bar)
 
+SubClassOf(:Buster_Bar :Ice_Cream_Bar)
 
-###  http://sbmi.uth.edu/ontology/offf#Treenuts
-:Treenuts rdf:type owl:DatatypeProperty ;
-          rdfs:domain :Allergens ;
-          rdfs:range xsd:boolean .
+# Class: :Buttermilk_Crispy_Chicken_Sandwich (:Buttermilk_Crispy_Chicken_Sandwich)
 
+SubClassOf(:Buttermilk_Crispy_Chicken_Sandwich :Crispy_Chicken_Sandwich)
 
-###  http://sbmi.uth.edu/ontology/offf#Weight
-:Weight rdf:type owl:DatatypeProperty ;
-        rdfs:domain :Serving_Size_Data ;
-        rdfs:range xsd:string .
+# Class: :Cake (:Cake)
 
+SubClassOf(:Cake :Fast_Food_Dessert)
 
-#################################################################
-#    Classes
-#################################################################
+# Class: :Calcium (:Calcium)
 
-###  http://sbmi.uth.edu/ontology/offf#All_Natural_Lemonade
-:All_Natural_Lemonade rdf:type owl:Class ;
-                      rdfs:subClassOf :Lemonade .
+SubClassOf(:Calcium :Minerals_Data)
 
+# Class: :Calories_Data (:Calories_Data)
 
-###  http://sbmi.uth.edu/ontology/offf#Allergens
-:Allergens rdf:type owl:Class .
+SubClassOf(:Calories_Data :Nutritional_Component)
 
+# Class: :Calories_Fat_Data (:Calories_Fat_Data)
 
-###  http://sbmi.uth.edu/ontology/offf#Americano
-:Americano rdf:type owl:Class ;
-           rdfs:subClassOf :Coffee_Fact .
+SubClassOf(:Calories_Fat_Data :Calories_Data)
 
+# Class: :Canola_Oil_ingredient (:Canola_Oil_ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Annatto
-:Annatto rdf:type owl:Class ;
-         rdfs:subClassOf :Ingredient .
+SubClassOf(:Canola_Oil_ingredient :Food_Ingredient)
 
+# Class: :Cappuccino (:Cappuccino)
 
-###  http://sbmi.uth.edu/ontology/offf#Apple_Bites
-:Apple_Bites rdf:type owl:Class ;
-             rdfs:subClassOf :Apple_Slices .
+SubClassOf(:Cappuccino :Coffee)
 
+# Class: :Caramel_Cappuccino (:Caramel_Cappuccino)
 
-###  http://sbmi.uth.edu/ontology/offf#Apple_Juice
-:Apple_Juice rdf:type owl:Class ;
-             rdfs:subClassOf :Fruit_Juice .
+SubClassOf(:Caramel_Cappuccino :Cappuccino)
 
+# Class: :Caramel_Frappe (:Caramel_Frappe)
 
-###  http://sbmi.uth.edu/ontology/offf#Apple_Pecan_Chicken
-:Apple_Pecan_Chicken rdf:type owl:Class ;
-                     rdfs:subClassOf :Salad .
+SubClassOf(:Caramel_Frappe :Frappe)
 
+# Class: :Caramel_Latte (:Caramel_Latte)
 
-###  http://sbmi.uth.edu/ontology/offf#Apple_Pecan_Chicken_Salad_Dressing
-:Apple_Pecan_Chicken_Salad_Dressing rdf:type owl:Class ;
-                                    rdfs:subClassOf :Salad_Dressing .
+SubClassOf(:Caramel_Latte :Latte)
 
+# Class: :Caramel_Macchiato (:Caramel_Macchiato)
 
-###  http://sbmi.uth.edu/ontology/offf#Apple_Slices
-:Apple_Slices rdf:type owl:Class ;
-              rdfs:subClassOf :Sides .
+SubClassOf(:Caramel_Macchiato :Macchiato)
 
+# Class: :Caramel_Mocha (:Caramel_Mocha)
 
-###  http://sbmi.uth.edu/ontology/offf#Apple_and_Cranberry_Chicken
-:Apple_and_Cranberry_Chicken rdf:type owl:Class ;
-                             rdfs:subClassOf :Salad .
+SubClassOf(:Caramel_Mocha :Mocha)
 
+# Class: :Caramel_MooLatte (:Caramel_MooLatte)
 
-###  http://sbmi.uth.edu/ontology/offf#Applesauce
-:Applesauce rdf:type owl:Class ;
-            rdfs:subClassOf :Sides .
+SubClassOf(:Caramel_MooLatte :Cold_Coffee)
+SubClassOf(:Caramel_MooLatte :Latte)
 
+# Class: :Caramel_Shake (:Caramel_Shake)
 
-###  http://sbmi.uth.edu/ontology/offf#Avocado_Bacon
-:Avocado_Bacon rdf:type owl:Class ;
-               rdfs:subClassOf :Bacon_burger .
+SubClassOf(:Caramel_Shake :Shake)
 
+# Class: :Caramel_Sundae (:Caramel_Sundae)
 
-###  http://sbmi.uth.edu/ontology/offf#BBQ
-:BBQ rdf:type owl:Class ;
-     rdfs:subClassOf :Condiment .
+SubClassOf(:Caramel_Sundae :Sundae)
 
+# Class: :Carbohydrates_Data (:Carbohydrates_Data)
 
-###  http://sbmi.uth.edu/ontology/offf#Bacon
-:Bacon rdf:type owl:Class ;
-       rdfs:subClassOf :Breakfast .
+SubClassOf(:Carbohydrates_Data :Nutritional_Component)
 
+# Class: :Cheese_Curds (:Cheese_Curds)
 
-###  http://sbmi.uth.edu/ontology/offf#BaconBurger
-:BaconBurger rdf:type owl:Class ;
-             rdfs:subClassOf :Sandwich .
+SubClassOf(:Cheese_Curds :Fast_Food_Sides)
 
+# Class: :Cheese_Rice_and_Bean_Burrito (:Cheese_Rice_and_Bean_Burrito)
 
-###  http://sbmi.uth.edu/ontology/offf#BaconJalapenoCheeseburger
-:BaconJalapenoCheeseburger rdf:type owl:Class ;
-                           rdfs:subClassOf :Sandwich .
+SubClassOf(:Cheese_Rice_and_Bean_Burrito :Bean_Burrito)
 
+# Class: :Cheese_ingredient (:Cheese_ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Bacon_Egg_and_Cheese_Bagel
-:Bacon_Egg_and_Cheese_Bagel rdf:type owl:Class ;
-                            rdfs:subClassOf :Bagel .
+SubClassOf(:Cheese_ingredient :Food_Ingredient)
 
+# Class: :Cheeseburger (:Cheeseburger)
 
-###  http://sbmi.uth.edu/ontology/offf#Bacon_Egg_and_Cheese_Biscuit
-:Bacon_Egg_and_Cheese_Biscuit rdf:type owl:Class ;
-                              rdfs:subClassOf :Biscuit .
+SubClassOf(:Cheeseburger :Hamburger)
 
+# Class: :Chicken_BLT_Salad (:Chicken_BLT_Salad)
 
-###  http://sbmi.uth.edu/ontology/offf#Bacon_Egg_and_Cheese_McGriddles
-:Bacon_Egg_and_Cheese_McGriddles rdf:type owl:Class ;
-                                 rdfs:subClassOf :McGriddles .
+SubClassOf(:Chicken_BLT_Salad :Chicken_Salad)
 
+# Class: :Chicken_Bacon_Ranch_Artisan-Style_Sandwich (:Chicken_Bacon_Ranch_Artisan-Style_Sandwich)
 
-###  http://sbmi.uth.edu/ontology/offf#Bacon_Egg_and_Swiss_Croissant
-:Bacon_Egg_and_Swiss_Croissant rdf:type owl:Class ;
-                               rdfs:subClassOf :Croissant .
+SubClassOf(:Chicken_Bacon_Ranch_Artisan-Style_Sandwich :Chicken_Sandwich)
+SubClassOf(:Chicken_Bacon_Ranch_Artisan-Style_Sandwich :Fast_Food_Sandwich)
 
+# Class: :Chicken_Biscuit (:Chicken_Biscuit)
 
-###  http://sbmi.uth.edu/ontology/offf#Bacon_Jalapeno_Cheeseburger
-:Bacon_Jalapeno_Cheeseburger rdf:type owl:Class ;
-                             rdfs:subClassOf :Cheeseburger .
+SubClassOf(:Chicken_Biscuit :Breakfast_Biscuit_Sandwich)
 
+# Class: :Chicken_Burrito (:Chicken_Burrito)
 
-###  http://sbmi.uth.edu/ontology/offf#Bacon_Jalapeno_Chicken_Sandwich
-:Bacon_Jalapeno_Chicken_Sandwich rdf:type owl:Class ;
-                                 rdfs:subClassOf :Chicken_Sandwich .
+SubClassOf(:Chicken_Burrito :Fast_Food_Burrito)
 
+# Class: :Chicken_Ingredient (:Chicken_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Bacon_and_Cheese_Whataburger
-:Bacon_and_Cheese_Whataburger rdf:type owl:Class ;
-                              rdfs:subClassOf :Bacon_burger .
+SubClassOf(:Chicken_Ingredient :Food_Ingredient)
 
+# Class: :Chicken_McNuggets (:Chicken_McNuggets)
 
-###  http://sbmi.uth.edu/ontology/offf#Bacon_burger
-:Bacon_burger rdf:type owl:Class ;
-              rdfs:subClassOf :Sandwich .
+SubClassOf(:Chicken_McNuggets :Chicken_Nuggets)
 
+# Class: :Chicken_Noodle_Soup_Sides (:Chicken_Noodle_Soup_Sides)
 
-###  http://sbmi.uth.edu/ontology/offf#Baconator
-:Baconator rdf:type owl:Class ;
-           rdfs:subClassOf :Bacon_burger .
+SubClassOf(:Chicken_Noodle_Soup_Sides :Fast_Food_Sides)
 
+# Class: :Chicken_Nuggets (:Chicken_Nuggets)
 
-###  http://sbmi.uth.edu/ontology/offf#Bagel
-:Bagel rdf:type owl:Class ;
-       rdfs:subClassOf :Breakfast .
+SubClassOf(:Chicken_Nuggets :Fast_Food_Chicken)
 
+# Class: :Chicken_Salad (:Chicken_Salad)
 
-###  http://sbmi.uth.edu/ontology/offf#Baked_Apple_Pie
-:Baked_Apple_Pie rdf:type owl:Class ;
-                 rdfs:subClassOf :Pie .
+SubClassOf(:Chicken_Salad :Fast_Food_Salad)
 
+# Class: :Chicken_Sandwich (:Chicken_Sandwich)
 
-###  http://sbmi.uth.edu/ontology/offf#Banana_Dairy_Queen
-:Banana_Dairy_Queen rdf:type owl:Class ;
-                    rdfs:subClassOf :Fruit .
+SubClassOf(:Chicken_Sandwich :Fast_Food_Sandwich)
 
+# Class: :Chicken_Strip (:Chicken_Strip)
 
-###  http://sbmi.uth.edu/ontology/offf#Banana_Shake
-:Banana_Shake rdf:type owl:Class ;
-              rdfs:subClassOf :Shake .
+SubClassOf(:Chicken_Strip :Fast_Food_Chicken)
 
+# Class: :Chicken_Strip_Basket (:Chicken_Strip_Basket)
 
-###  http://sbmi.uth.edu/ontology/offf#Banana_Split
-:Banana_Split rdf:type owl:Class ;
-              rdfs:subClassOf :Royal_Treats .
+SubClassOf(:Chicken_Strip_Basket :Fast_Food_Chicken)
 
+# Class: :Chili_Cheese_Hot_Dog (:Chili_Cheese_Hot_Dog)
 
-###  http://sbmi.uth.edu/ontology/offf#Barbecue_Cheeseburger
-:Barbecue_Cheeseburger rdf:type owl:Class ;
-                       rdfs:subClassOf :Cheeseburger .
+SubClassOf(:Chili_Cheese_Hot_Dog :Hot_Dog)
 
+# Class: :Choco_Brownie_Treatzza_Pizza (:Choco_Brownie_Treatzza_Pizza)
 
-###  http://sbmi.uth.edu/ontology/offf#Bean
-:Bean rdf:type owl:Class ;
-      rdfs:subClassOf :Burrito .
+AnnotationAssertion(owl:deprecated :Choco_Brownie_Treatzza_Pizza "true"^^xsd:boolean)
+SubClassOf(:Choco_Brownie_Treatzza_Pizza :DQ_Treatzza_Pizza)
 
+# Class: :Choco_Brownie_Xtreme_Blizzard_Cake (:Choco_Brownie_Xtreme_Blizzard_Cake)
 
-###  http://sbmi.uth.edu/ontology/offf#Beef
-:Beef rdf:type owl:Class ;
-      rdfs:subClassOf :Ingredient .
+AnnotationAssertion(owl:deprecated :Choco_Brownie_Xtreme_Blizzard_Cake "true"^^xsd:boolean)
+SubClassOf(:Choco_Brownie_Xtreme_Blizzard_Cake :Blizzard_Cake)
 
+# Class: :Chocolate_Cake_Shake (:Chocolate_Cake_Shake)
 
-###  http://sbmi.uth.edu/ontology/offf#BeefBurrito
-:BeefBurrito rdf:type owl:Class ;
-             rdfs:subClassOf :Burrito .
+SubClassOf(:Chocolate_Cake_Shake :Shake)
 
+# Class: :Chocolate_Chip_Cookie (:Chocolate_Chip_Cookie)
 
-###  http://sbmi.uth.edu/ontology/offf#Beef_Burrito
-:Beef_Burrito rdf:type owl:Class ;
-              rdfs:subClassOf :Burrito .
+SubClassOf(:Chocolate_Chip_Cookie :Cookie)
 
+# Class: :Chocolate_Chunk_Cookie (:Chocolate_Chunk_Cookie)
 
-###  http://sbmi.uth.edu/ontology/offf#Beefy_5_layer
-:Beefy_5_layer rdf:type owl:Class ;
-               rdfs:subClassOf :Beef_Burrito .
+SubClassOf(:Chocolate_Chunk_Cookie :Cookie)
 
+# Class: :Chocolate_Dipped_Cone (:Chocolate_Dipped_Cone)
 
-###  http://sbmi.uth.edu/ontology/offf#Beefy_Fritos
-:Beefy_Fritos rdf:type owl:Class ;
-              rdfs:subClassOf :Beefy_5_layer .
+SubClassOf(:Chocolate_Dipped_Cone :Cone)
 
+# Class: :Chocolate_Frosty_Cookie_Sundae (:Chocolate_Frosty_Cookie_Sundae)
 
-###  http://sbmi.uth.edu/ontology/offf#Beefy_Fritos_Burrito
-:Beefy_Fritos_Burrito rdf:type owl:Class ;
-                      rdfs:subClassOf :Burrito .
+SubClassOf(:Chocolate_Frosty_Cookie_Sundae :Sundae)
 
+# Class: :Chocolate_Malt (:Chocolate_Malt)
 
-###  http://sbmi.uth.edu/ontology/offf#Beta_carotene
-:Beta_carotene rdf:type owl:Class ;
-               rdfs:subClassOf :Ingredient .
+EquivalentClasses(:Chocolate_Malt :Chocolate_Shake)
+SubClassOf(:Chocolate_Malt :Shake)
 
+# Class: :Chocolate_Shake (:Chocolate_Shake)
 
-###  http://sbmi.uth.edu/ontology/offf#Big_Breakfast
-:Big_Breakfast rdf:type owl:Class ;
-               rdfs:subClassOf :Breakfast .
+SubClassOf(:Chocolate_Shake :Shake)
 
+# Class: :Chocolate_Sundae (:Chocolate_Sundae)
 
-###  http://sbmi.uth.edu/ontology/offf#Big_Breakfast_Breakfast
-:Big_Breakfast_Breakfast rdf:type owl:Class ;
-                         rdfs:subClassOf :Big_Breakfast .
+SubClassOf(:Chocolate_Sundae :Sundae)
 
+# Class: :Cholesterol_Data (:Cholesterol_Data)
 
-###  http://sbmi.uth.edu/ontology/offf#Big_Breakfast_Hotcakes
-:Big_Breakfast_Hotcakes rdf:type owl:Class ;
-                        rdfs:subClassOf <http://sbmi.uth.edu/ontology/offf#Big_Breakfast_McDonald's> .
+SubClassOf(:Cholesterol_Data :Nutritional_Component)
 
+# Class: :Cinnamon_Roll (:Cinnamon_Roll)
 
-###  http://sbmi.uth.edu/ontology/offf#Big_Breakfast_with_Hotcakes
-:Big_Breakfast_with_Hotcakes rdf:type owl:Class ;
-                             rdfs:subClassOf :Big_Breakfast .
+SubClassOf(:Cinnamon_Roll :Fast_Food_Dessert)
 
+# Class: :Citric_Acid_Ingredient (:Citric_Acid_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Big_Mac
-:Big_Mac rdf:type owl:Class ;
-         rdfs:subClassOf :Hamburger .
+SubClassOf(:Citric_Acid_Ingredient :Food_Ingredient)
 
+# Class: :Classic_Bacon_Egg_and_Cheese_Sandwich (:Classic_Bacon_Egg_and_Cheese_Sandwich)
 
-###  http://sbmi.uth.edu/ontology/offf#Biscuit
-:Biscuit rdf:type owl:Class ;
-         rdfs:subClassOf :Breakfast .
+SubClassOf(:Classic_Bacon_Egg_and_Cheese_Sandwich :Fast_Food_Sandwich)
 
+# Class: :Classic_Sausage_Egg_and_Cheese_Sandwich (:Classic_Sausage_Egg_and_Cheese_Sandwich)
 
-###  http://sbmi.uth.edu/ontology/offf#Biscuit_and_Gravy
-:Biscuit_and_Gravy rdf:type owl:Class ;
-                   rdfs:subClassOf :Biscuit .
+SubClassOf(:Classic_Sausage_Egg_and_Cheese_Sandwich :Fast_Food_Sandwich)
 
+# Class: :Cobb_Salad (:Cobb_Salad)
 
-###  http://sbmi.uth.edu/ontology/offf#Biscuit_with_Bacon
-:Biscuit_with_Bacon rdf:type owl:Class ;
-                    rdfs:subClassOf :Biscuit .
+SubClassOf(:Cobb_Salad :Fast_Food_Salad)
 
+# Class: :Cocoa_Cola_Soft_Drink (:Cocoa_Cola_Soft_Drink)
 
-###  http://sbmi.uth.edu/ontology/offf#Biscuit_with_Sausage
-:Biscuit_with_Sausage rdf:type owl:Class ;
-                      rdfs:subClassOf :Biscuit .
+SubClassOf(:Cocoa_Cola_Soft_Drink :Dark_Soda)
 
+# Class: :Coffee (:Coffee)
 
-###  http://sbmi.uth.edu/ontology/offf#Black_Tea
-:Black_Tea rdf:type owl:Class ;
-           rdfs:subClassOf :Ingredient .
+SubClassOf(:Coffee :Fast_Food_Beverage)
 
+# Class: :Cold_Coffee (:Cold_Coffee)
 
-###  http://sbmi.uth.edu/ontology/offf#Blizzard_Cake
-:Blizzard_Cake rdf:type owl:Class ;
-               rdfs:subClassOf :Cake .
+SubClassOf(:Cold_Coffee :Coffee)
 
+# Class: :Cone (:Cone)
 
-###  http://sbmi.uth.edu/ontology/offf#Blizzard_Treat
-:Blizzard_Treat rdf:type owl:Class ;
-                rdfs:subClassOf :Dessert .
+SubClassOf(:Cone :Ice_Cream)
 
+# Class: :Cone_Kids_Dairy_Queen (:Cone_Kids_Dairy_Queen)
 
-###  http://sbmi.uth.edu/ontology/offf#Breakfast
-:Breakfast rdf:type owl:Class ;
-           rdfs:subClassOf :Fast_Food_Fact .
+SubClassOf(:Cone_Kids_Dairy_Queen :Cone)
 
+# Class: :Cookie (:Cookie)
 
-###  http://sbmi.uth.edu/ontology/offf#Breakfast_Baconator
-:Breakfast_Baconator rdf:type owl:Class ;
-                     rdfs:subClassOf :Bacon .
+SubClassOf(:Cookie :Fast_Food_Dessert)
 
+# Class: :Cookie_Dough_Blizzard_Cake (:Cookie_Dough_Blizzard_Cake)
 
-###  http://sbmi.uth.edu/ontology/offf#Breakfast_Platter_Whataburgers
-:Breakfast_Platter_Whataburgers rdf:type owl:Class ;
-                                rdfs:subClassOf :Platter .
+AnnotationAssertion(owl:deprecated :Cookie_Dough_Blizzard_Cake "true"^^xsd:boolean)
+SubClassOf(:Cookie_Dough_Blizzard_Cake :Blizzard_Cake)
 
+# Class: :Cotton_Candy_Dipped_Cone (:Cotton_Candy_Dipped_Cone)
 
-###  http://sbmi.uth.edu/ontology/offf#Breakfast_on_a_Bun_Whataburgers
-:Breakfast_on_a_Bun_Whataburgers rdf:type owl:Class ;
-                                 rdfs:subClassOf :Breakfast .
+SubClassOf(:Cotton_Candy_Dipped_Cone :Cone)
 
+# Class: :Cream_Ingredient (:Cream_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Brownie_and_Oreo_Cupfection
-:Brownie_and_Oreo_Cupfection rdf:type owl:Class ;
-                             rdfs:subClassOf :Royal_Treats .
+SubClassOf(:Cream_Ingredient :Food_Ingredient)
 
+# Class: :Crispy_Chicken_BLT (:Crispy_Chicken_BLT)
 
-###  http://sbmi.uth.edu/ontology/offf#Burrito
-:Burrito rdf:type owl:Class ;
-         rdfs:subClassOf :Fast_Food_Fact .
+SubClassOf(:Crispy_Chicken_BLT :Crispy_Chicken_Sandwich)
 
+# Class: :Crispy_Chicken_Nuggets (:Crispy_Chicken_Nuggets)
 
-###  http://sbmi.uth.edu/ontology/offf#Burritos
-:Burritos rdf:type owl:Class ;
-          rdfs:subClassOf :Breakfast .
+SubClassOf(:Crispy_Chicken_Nuggets :Chicken_Nuggets)
 
+# Class: :Crispy_Chicken_Sandwich (:Crispy_Chicken_Sandwich)
 
-###  http://sbmi.uth.edu/ontology/offf#Buster_Bar
-:Buster_Bar rdf:type owl:Class ;
-            rdfs:subClassOf :Ice_Cream .
+SubClassOf(:Crispy_Chicken_Sandwich :Chicken_Sandwich)
 
+# Class: :Croissant_Sandwich (:Croissant_Sandwich)
 
-###  http://sbmi.uth.edu/ontology/offf#Butterfinger_Blizzard_Treat
-:Butterfinger_Blizzard_Treat rdf:type owl:Class ;
-                             rdfs:subClassOf :Blizzard_Treat .
+SubClassOf(:Croissant_Sandwich :Fast_Food_Sandwich)
 
+# Class: :Crunch_Taco (:Crunch_Taco)
 
-###  http://sbmi.uth.edu/ontology/offf#Buttermilk_Crispy_Chicken_Sandwich
-:Buttermilk_Crispy_Chicken_Sandwich rdf:type owl:Class ;
-                                    rdfs:subClassOf :Chicken_Sandwich .
+SubClassOf(:Crunch_Taco :Hard_Taco)
 
+# Class: :Crunchy_Taco_Supreme (:Crunchy_Taco_Supreme)
 
-###  http://sbmi.uth.edu/ontology/offf#Cake
-:Cake rdf:type owl:Class ;
-      rdfs:subClassOf :Dessert .
+SubClassOf(:Crunchy_Taco_Supreme :Crunch_Taco)
 
+# Class: :Cucumbers_Ingredient (:Cucumbers_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Calcium
-:Calcium rdf:type owl:Class ;
-         rdfs:subClassOf :Minerals_Data .
+SubClassOf(:Cucumbers_Ingredient :Food_Ingredient)
 
+# Class: :Culture_Ingredient (:Culture_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Calories_Data
-:Calories_Data rdf:type owl:Class ;
-               rdfs:subClassOf :Nutritional_Component .
+SubClassOf(:Culture_Ingredient :Food_Ingredient)
 
+# Class: :DQ_Treatzza_Pizza (:DQ_Treatzza_Pizza)
 
-###  http://sbmi.uth.edu/ontology/offf#Calories_Fat_Data
-:Calories_Fat_Data rdf:type owl:Class ;
-                   rdfs:subClassOf :Calories_Data .
+AnnotationAssertion(owl:deprecated :DQ_Treatzza_Pizza "true"^^xsd:boolean)
+SubClassOf(:DQ_Treatzza_Pizza :Cake)
 
+# Class: :Dairy_Queen_Signature_All_Ocassion_Round_Cake (:Dairy_Queen_Signature_All_Ocassion_Round_Cake)
 
-###  http://sbmi.uth.edu/ontology/offf#Canola_oil
-:Canola_oil rdf:type owl:Class ;
-            rdfs:subClassOf :Ingredient .
+AnnotationAssertion(owl:deprecated :Dairy_Queen_Signature_All_Ocassion_Round_Cake "true"^^xsd:boolean)
+SubClassOf(:Dairy_Queen_Signature_All_Ocassion_Round_Cake :Cake)
 
+# Class: :Dairy_Queen_Signature_All_Ocassion_Sheet_Cake (:Dairy_Queen_Signature_All_Ocassion_Sheet_Cake)
 
-###  http://sbmi.uth.edu/ontology/offf#Cappuccino
-:Cappuccino rdf:type owl:Class ;
-            rdfs:subClassOf :Coffee_Fact .
+AnnotationAssertion(owl:deprecated :Dairy_Queen_Signature_All_Ocassion_Sheet_Cake "true"^^xsd:boolean)
+SubClassOf(:Dairy_Queen_Signature_All_Ocassion_Sheet_Cake :Cake)
 
+# Class: :Dark_Soda (:Dark_Soda)
 
-###  http://sbmi.uth.edu/ontology/offf#Caramel_Cappuccino
-:Caramel_Cappuccino rdf:type owl:Class ;
-                    rdfs:subClassOf :Cappuccino .
+SubClassOf(:Dark_Soda :Soft_Drink)
 
+# Class: :Dextrose_Ingredient (:Dextrose_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Caramel_Frappe
-:Caramel_Frappe rdf:type owl:Class ;
-                rdfs:subClassOf :Frappe .
+SubClassOf(:Dextrose_Ingredient :Food_Ingredient)
 
+# Class: :Diet_Coke_Soft_Drink (:Diet_Coke_Soft_Drink)
 
-###  http://sbmi.uth.edu/ontology/offf#Caramel_Latte
-:Caramel_Latte rdf:type owl:Class ;
-               rdfs:subClassOf :Latte .
+SubClassOf(:Diet_Coke_Soft_Drink :Dark_Soda)
+SubClassOf(:Diet_Coke_Soft_Drink :Diet_Soft_Drink)
 
+# Class: :Diet_Soft_Drink (:Diet_Soft_Drink)
 
-###  http://sbmi.uth.edu/ontology/offf#Caramel_Macchiato
-:Caramel_Macchiato rdf:type owl:Class ;
-                   rdfs:subClassOf :Macchiato .
+SubClassOf(:Diet_Soft_Drink :Soft_Drink)
 
+# Class: :Dietary_Fibre_Data (:Dietary_Fibre_Data)
 
-###  http://sbmi.uth.edu/ontology/offf#Caramel_Mocha
-:Caramel_Mocha rdf:type owl:Class ;
-               rdfs:subClassOf :Mocha .
+SubClassOf(:Dietary_Fibre_Data :Carbohydrates_Data)
 
+# Class: :Dilly_Bar (:Dilly_Bar)
 
-###  http://sbmi.uth.edu/ontology/offf#Caramel_MooLatte
-:Caramel_MooLatte rdf:type owl:Class ;
-                  rdfs:subClassOf :Latte .
+SubClassOf(:Dilly_Bar :Ice_Cream_Bar)
 
+# Class: :Dipped_Strawberry_Cake_Cupfection (:Dipped_Strawberry_Cake_Cupfection)
 
-###  http://sbmi.uth.edu/ontology/offf#Caramel_Shake
-:Caramel_Shake rdf:type owl:Class ;
-               rdfs:subClassOf :Shake .
+SubClassOf(:Dipped_Strawberry_Cake_Cupfection :Royal_Treats)
 
+# Class: :Double_Patty_Cheese_Burger (:Double_Patty_Cheese_Burger)
 
-###  http://sbmi.uth.edu/ontology/offf#Caramel_Sundae
-:Caramel_Sundae rdf:type owl:Class ;
-                rdfs:subClassOf :Sundae .
+SubClassOf(:Double_Patty_Cheese_Burger :Cheeseburger)
 
+# Class: :Double_Patty_Hamburger (:Double_Patty_Hamburger)
 
-###  http://sbmi.uth.edu/ontology/offf#Carbohydrates_Data
-:Carbohydrates_Data rdf:type owl:Class ;
-                    rdfs:subClassOf :Nutritional_Component .
+SubClassOf(:Double_Patty_Hamburger :Hamburger)
 
+# Class: :Double_Quarter_Pounder_with_Cheese (:Double_Quarter_Pounder_with_Cheese)
 
-###  http://sbmi.uth.edu/ontology/offf#Cheese
-:Cheese rdf:type owl:Class ;
-        rdfs:subClassOf :Ingredient .
+SubClassOf(:Double_Quarter_Pounder_with_Cheese :Hamburger)
 
+# Class: :Dr_Pepper_Shake (:Dr_Pepper_Shake)
 
-###  http://sbmi.uth.edu/ontology/offf#Cheese_Curds
-:Cheese_Curds rdf:type owl:Class ;
-              rdfs:subClassOf :Sides .
+SubClassOf(:Dr_Pepper_Shake :Shake)
 
+# Class: :Dr_Pepper_Soft_Drink (:Dr_Pepper_Soft_Drink)
 
-###  http://sbmi.uth.edu/ontology/offf#Cheese_Grillburger
-:Cheese_Grillburger rdf:type owl:Class ;
-                    rdfs:subClassOf :Grillburger .
+SubClassOf(:Dr_Pepper_Soft_Drink :Dark_Soda)
 
+# Class: :Egg_McMuffin (:Egg_McMuffin)
 
-###  http://sbmi.uth.edu/ontology/offf#Cheeseburger
-:Cheeseburger rdf:type owl:Class ;
-              rdfs:subClassOf :Sandwich .
+SubClassOf(:Egg_McMuffin :McMuffin)
 
+# Class: :Egg_and_Cheese_Biscuit (:Egg_and_Cheese_Biscuit)
 
-###  http://sbmi.uth.edu/ontology/offf#Cheeseburger_Combo
-:Cheeseburger_Combo rdf:type owl:Class ;
-                    rdfs:subClassOf :Cheeseburger_Dairy_Queen .
+SubClassOf(:Egg_and_Cheese_Biscuit :Breakfast_Biscuit_Sandwich)
 
+# Class: :Enzymes_Ingredient (:Enzymes_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Cheeseburger_Dairy_Queen
-:Cheeseburger_Dairy_Queen rdf:type owl:Class ;
-                          rdfs:subClassOf :Cheeseburger .
+SubClassOf(:Enzymes_Ingredient :Food_Ingredient)
 
+# Class: :Fanta_Soft_Drink (:Fanta_Soft_Drink)
 
-###  http://sbmi.uth.edu/ontology/offf#Cheesy_Rice_and_Bean
-:Cheesy_Rice_and_Bean rdf:type owl:Class ;
-                      rdfs:subClassOf :Burrito .
+SubClassOf(:Fanta_Soft_Drink :Soft_Drink)
 
+# Class: :Fast_Food (:Fast_Food)
 
-###  http://sbmi.uth.edu/ontology/offf#Chicken
-:Chicken rdf:type owl:Class ;
-         rdfs:subClassOf :Fast_Food_Fact ,
-                         :Ingredient .
+SubClassOf(:Fast_Food :Food)
 
+# Class: :Fast_Food_Beverage (:Fast_Food_Beverage)
 
-###  http://sbmi.uth.edu/ontology/offf#ChickenSandwich
-:ChickenSandwich rdf:type owl:Class ;
-                 rdfs:subClassOf :Sandwich .
+SubClassOf(:Fast_Food_Beverage :Fast_Food)
 
+# Class: :Fast_Food_Breakfast_Item (:Fast_Food_Breakfast_Item)
 
-###  http://sbmi.uth.edu/ontology/offf#Chicken_BLT_Salad
-:Chicken_BLT_Salad rdf:type owl:Class ;
-                   rdfs:subClassOf :Salad .
+SubClassOf(:Fast_Food_Breakfast_Item :Fast_Food)
 
+# Class: :Fast_Food_Burrito (:Fast_Food_Burrito)
 
-###  http://sbmi.uth.edu/ontology/offf#Chicken_Bacon_Ranch_Artisan-Style_Sandwich
-:Chicken_Bacon_Ranch_Artisan-Style_Sandwich rdf:type owl:Class ;
-                                            rdfs:subClassOf :Sandwich .
+SubClassOf(:Fast_Food_Burrito :Fast_Food)
 
+# Class: :Fast_Food_Chicken (:Fast_Food_Chicken)
 
-###  http://sbmi.uth.edu/ontology/offf#Chicken_Burrito
-:Chicken_Burrito rdf:type owl:Class ;
-                 rdfs:subClassOf :Burrito .
+SubClassOf(:Fast_Food_Chicken :Fast_Food)
 
+# Class: :Fast_Food_Condiment (:Fast_Food_Condiment)
 
-###  http://sbmi.uth.edu/ontology/offf#Chicken_McNuggets
-:Chicken_McNuggets rdf:type owl:Class ;
-                   rdfs:subClassOf :Chicken .
+SubClassOf(:Fast_Food_Condiment :Fast_Food)
 
+# Class: :Fast_Food_Dessert (:Fast_Food_Dessert)
 
-###  http://sbmi.uth.edu/ontology/offf#Chicken_Noodle_Soup
-:Chicken_Noodle_Soup rdf:type owl:Class ;
-                     rdfs:subClassOf :Sides .
+SubClassOf(:Fast_Food_Dessert :Fast_Food)
 
+# Class: :Fast_Food_Salad (:Fast_Food_Salad)
 
-###  http://sbmi.uth.edu/ontology/offf#Chicken_Sandwich
-:Chicken_Sandwich rdf:type owl:Class ;
-                  rdfs:subClassOf :Sandwich .
+SubClassOf(:Fast_Food_Salad :Fast_Food)
 
+# Class: :Fast_Food_Sandwich (:Fast_Food_Sandwich)
 
-###  http://sbmi.uth.edu/ontology/offf#Chicken_Strip_Basket
-:Chicken_Strip_Basket rdf:type owl:Class ;
-                      rdfs:subClassOf :Chicken .
+SubClassOf(:Fast_Food_Sandwich :Fast_Food)
 
+# Class: :Fast_Food_Sides (:Fast_Food_Sides)
 
-###  http://sbmi.uth.edu/ontology/offf#Chicken_Strip_Dairy_queen
-:Chicken_Strip_Dairy_queen rdf:type owl:Class ;
-                           rdfs:subClassOf :Chicken .
+SubClassOf(:Fast_Food_Sides :Fast_Food)
 
+# Class: :Fast_Food_Taco (:Fast_Food_Taco)
 
-###  http://sbmi.uth.edu/ontology/offf#Chicken_nuggets
-:Chicken_nuggets rdf:type owl:Class ;
-                 rdfs:subClassOf :Chicken .
+SubClassOf(:Fast_Food_Taco :Fast_Food)
 
+# Class: :Fat_Data (:Fat_Data)
 
-###  http://sbmi.uth.edu/ontology/offf#Chicken_strip
-:Chicken_strip rdf:type owl:Class ;
-               rdfs:subClassOf :Chicken .
+SubClassOf(:Fat_Data :Nutritional_Component)
 
+# Class: :Fish_Sandwich (:Fish_Sandwich)
 
-###  http://sbmi.uth.edu/ontology/offf#Chili_Cheese_Dog
-:Chili_Cheese_Dog rdf:type owl:Class ;
-                  rdfs:subClassOf :Hot_Dog .
+SubClassOf(:Fish_Sandwich :Fast_Food_Sandwich)
 
+# Class: :Flour_Ingredient (:Flour_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Choco_Brownie_Extreme_Blizzard_Treat
-:Choco_Brownie_Extreme_Blizzard_Treat rdf:type owl:Class ;
-                                      rdfs:subClassOf :Blizzard_Treat .
+SubClassOf(:Flour_Ingredient :Food_Ingredient)
 
+# Class: :Frappe (:Frappe)
 
-###  http://sbmi.uth.edu/ontology/offf#Choco_Brownie_Treatzza_Pizza
-:Choco_Brownie_Treatzza_Pizza rdf:type owl:Class ;
-                              rdfs:subClassOf :DQ_Treatzza_Pizza .
+SubClassOf(:Frappe :Coffee)
+SubClassOf(:Frappe :Cold_Coffee)
 
+# Class: :French_Vanilla_Cappuccino (:French_Vanilla_Cappuccino)
 
-###  http://sbmi.uth.edu/ontology/offf#Choco_Brownie_Xtreme_Blizzard_Cake
-:Choco_Brownie_Xtreme_Blizzard_Cake rdf:type owl:Class ;
-                                    rdfs:subClassOf :Blizzard_Cake .
+SubClassOf(:French_Vanilla_Cappuccino :Cappuccino)
 
+# Class: :French_Vanilla_Latte (:French_Vanilla_Latte)
 
-###  http://sbmi.uth.edu/ontology/offf#Chocolate
-:Chocolate rdf:type owl:Class ;
-           rdfs:subClassOf :Shake .
+SubClassOf(:French_Vanilla_Latte :Latte)
 
+# Class: :Fries (:Fries)
 
-###  http://sbmi.uth.edu/ontology/offf#Chocolate_Cake_Shake
-:Chocolate_Cake_Shake rdf:type owl:Class ;
-                      rdfs:subClassOf :Shake .
+SubClassOf(:Fries :Fast_Food_Sides)
 
+# Class: :Frosted_Coffee (:Frosted_Coffee)
 
-###  http://sbmi.uth.edu/ontology/offf#Chocolate_Chip
-:Chocolate_Chip rdf:type owl:Class ;
-                rdfs:subClassOf :Cookie .
+SubClassOf(:Frosted_Coffee :Coffee)
 
+# Class: :Frosted_Lemonade (:Frosted_Lemonade)
 
-###  http://sbmi.uth.edu/ontology/offf#Chocolate_Chip_Cookie_Dough_Blizzard_Treat
-:Chocolate_Chip_Cookie_Dough_Blizzard_Treat rdf:type owl:Class ;
-                                            rdfs:subClassOf :Blizzard_Treat .
+SubClassOf(:Frosted_Lemonade :Lemonade)
 
+# Class: :Fruit (:Fruit)
 
-###  http://sbmi.uth.edu/ontology/offf#Chocolate_Chunk
-:Chocolate_Chunk rdf:type owl:Class ;
-                 rdfs:subClassOf :Cookie .
+SubClassOf(:Fruit :Fast_Food_Sides)
 
+# Class: :Fruit_Cup (:Fruit_Cup)
 
-###  http://sbmi.uth.edu/ontology/offf#Chocolate_Dip
-:Chocolate_Dip rdf:type owl:Class ;
-               rdfs:subClassOf :Cone .
+SubClassOf(:Fruit_Cup :Fast_Food_Sides)
 
+# Class: :Fruit_Juice (:Fruit_Juice)
 
-###  http://sbmi.uth.edu/ontology/offf#Chocolate_Dipped_Cone
-:Chocolate_Dipped_Cone rdf:type owl:Class ;
-                       rdfs:subClassOf :Cone .
+SubClassOf(:Fruit_Juice :Fast_Food_Beverage)
 
+# Class: :Fruit_Punch_Slushie (:Fruit_Punch_Slushie)
 
-###  http://sbmi.uth.edu/ontology/offf#Chocolate_Frosty_Cookie_Sundae
-:Chocolate_Frosty_Cookie_Sundae rdf:type owl:Class ;
-                                rdfs:subClassOf :Sundae .
+SubClassOf(:Fruit_Punch_Slushie :Slushie)
 
+# Class: :Fruit_and_Maple_Oatmeal (:Fruit_and_Maple_Oatmeal)
 
-###  http://sbmi.uth.edu/ontology/offf#Chocolate_Sundae
-:Chocolate_Sundae rdf:type owl:Class ;
-                  rdfs:subClassOf :Sundae .
+SubClassOf(:Fruit_and_Maple_Oatmeal :Breakfast_Oats_Item)
 
+# Class: :Fudge_Stuffed_Cookie (:Fudge_Stuffed_Cookie)
 
-###  http://sbmi.uth.edu/ontology/offf#Chocolate_malt
-:Chocolate_malt rdf:type owl:Class ;
-                rdfs:subClassOf :Shake .
+SubClassOf(:Fudge_Stuffed_Cookie :Cookie)
 
+# Class: :Garden_Herb_Ranch (:Garden_Herb_Ranch)
 
-###  http://sbmi.uth.edu/ontology/offf#Cholesterol_Data
-:Cholesterol_Data rdf:type owl:Class ;
-                  rdfs:subClassOf :Nutritional_Component .
+SubClassOf(:Garden_Herb_Ranch :Ranch)
 
+# Class: :Garden_Salad (:Garden_Salad)
 
-###  http://sbmi.uth.edu/ontology/offf#Cinnamon_Roll
-:Cinnamon_Roll rdf:type owl:Class ;
-               rdfs:subClassOf :Dessert .
+SubClassOf(:Garden_Salad :Fast_Food_Salad)
 
+# Class: :Grilled_Asiago_Ranch_Club (:Grilled_Asiago_Ranch_Club)
 
-###  http://sbmi.uth.edu/ontology/offf#Cinnamon_Roll_Whataburgers
-:Cinnamon_Roll_Whataburgers rdf:type owl:Class ;
-                            rdfs:subClassOf :Pancakes .
+SubClassOf(:Grilled_Asiago_Ranch_Club :Chicken_Sandwich)
 
+# Class: :Grilled_Avocado_BLT_Chicken_Sandwich (:Grilled_Avocado_BLT_Chicken_Sandwich)
 
-###  http://sbmi.uth.edu/ontology/offf#Citric_Acid
-:Citric_Acid rdf:type owl:Class ;
-             rdfs:subClassOf :Ingredient .
+SubClassOf(:Grilled_Avocado_BLT_Chicken_Sandwich :Chicken_Sandwich)
 
+# Class: :Grilled_Bacon_Jalapeno_Chicken_Sandwich (:Grilled_Bacon_Jalapeno_Chicken_Sandwich)
 
-###  http://sbmi.uth.edu/ontology/offf#Classic_Bacon_Egg_and_Cheese_Sandwich
-:Classic_Bacon_Egg_and_Cheese_Sandwich rdf:type owl:Class ;
-                                       rdfs:subClassOf :Sandwich .
+SubClassOf(:Grilled_Bacon_Jalapeno_Chicken_Sandwich :Chicken_Sandwich)
 
+# Class: :Grilled_Barbecue_Chicken_Sandwich (:Grilled_Barbecue_Chicken_Sandwich)
 
-###  http://sbmi.uth.edu/ontology/offf#Classic_Sausage_Egg_and_Cheese_Sandwich
-:Classic_Sausage_Egg_and_Cheese_Sandwich rdf:type owl:Class ;
-                                         rdfs:subClassOf :Sandwich .
+SubClassOf(:Grilled_Barbecue_Chicken_Sandwich :Chicken_Sandwich)
 
+# Class: :Grilled_Chicken_Sandwich (:Grilled_Chicken_Sandwich)
 
-###  http://sbmi.uth.edu/ontology/offf#Cobb
-:Cobb rdf:type owl:Class ;
-      rdfs:subClassOf :Salad .
+SubClassOf(:Grilled_Chicken_Sandwich :Chicken_Sandwich)
 
+# Class: :Grilled_Steak_Soft_Taco (:Grilled_Steak_Soft_Taco)
 
-###  http://sbmi.uth.edu/ontology/offf#Cocoa_Cola
-:Cocoa_Cola rdf:type owl:Class ;
-            rdfs:subClassOf :Soft_Drink .
+SubClassOf(:Grilled_Steak_Soft_Taco :Soft_Taco)
 
+# Class: :Gum_Arabic_Ingredient (:Gum_Arabic_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Coffee_Fact
-:Coffee_Fact rdf:type owl:Class ;
-             rdfs:subClassOf :Fast_Food_Beverage_Fact .
+SubClassOf(:Gum_Arabic_Ingredient :Food_Ingredient)
 
+# Class: :Hamburger (:Hamburger)
 
-###  http://sbmi.uth.edu/ontology/offf#Condiment
-:Condiment rdf:type owl:Class ;
-           rdfs:subClassOf :Fast_Food_Fact .
+SubClassOf(:Hamburger :Fast_Food_Sandwich)
 
+# Class: :Hamburger_with_Bacon (:Hamburger_with_Bacon)
 
-###  http://sbmi.uth.edu/ontology/offf#Cone
-:Cone rdf:type owl:Class ;
-      rdfs:subClassOf :Ice_Cream .
+SubClassOf(:Hamburger_with_Bacon :Hamburger)
 
+# Class: :Hard_Taco (:Hard_Taco)
 
-###  http://sbmi.uth.edu/ontology/offf#Cone_Kids_Dairy_Queen
-:Cone_Kids_Dairy_Queen rdf:type owl:Class ;
-                       rdfs:subClassOf :Cone .
+SubClassOf(:Hard_Taco :Fast_Food_Taco)
 
+# Class: :Hash_Brown_Sticks (:Hash_Brown_Sticks)
 
-###  http://sbmi.uth.edu/ontology/offf#Cookie
-:Cookie rdf:type owl:Class ;
-        rdfs:subClassOf :Dessert .
+SubClassOf(:Hash_Brown_Sticks :Hash_Browns)
 
+# Class: :Hash_Browns (:Hash_Browns)
 
-###  http://sbmi.uth.edu/ontology/offf#Cookie_Dough_Blizzard_Cake
-:Cookie_Dough_Blizzard_Cake rdf:type owl:Class ;
-                            rdfs:subClassOf :Blizzard_Cake .
+SubClassOf(:Hash_Browns :Fast_Food_Breakfast_Item)
 
+# Class: :Heath_Treatzza_Pizza (:Heath_Treatzza_Pizza)
 
-###  http://sbmi.uth.edu/ontology/offf#Cotton_Candy_Dipped_Cone
-:Cotton_Candy_Dipped_Cone rdf:type owl:Class ;
-                          rdfs:subClassOf :Cone .
+AnnotationAssertion(owl:deprecated :Heath_Treatzza_Pizza "true"^^xsd:boolean)
+SubClassOf(:Heath_Treatzza_Pizza :DQ_Treatzza_Pizza)
 
+# Class: :High_Fructose_Corn_Syrup_Ingredient (:High_Fructose_Corn_Syrup_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Cream
-:Cream rdf:type owl:Class ;
-       rdfs:subClassOf :Ingredient .
+SubClassOf(:High_Fructose_Corn_Syrup_Ingredient :Food_Ingredient)
 
+# Class: :Homestyle_Asiago_Ranch_Chicken_Club (:Homestyle_Asiago_Ranch_Chicken_Club)
 
-###  http://sbmi.uth.edu/ontology/offf#Crispy_Chicken_BLT
-:Crispy_Chicken_BLT rdf:type owl:Class ;
-                    rdfs:subClassOf :Chicken_Sandwich .
+SubClassOf(:Homestyle_Asiago_Ranch_Chicken_Club :Chicken_Sandwich)
 
+# Class: :Homestyle_Avocado_BLT_Chicken_Sandwich (:Homestyle_Avocado_BLT_Chicken_Sandwich)
 
-###  http://sbmi.uth.edu/ontology/offf#Crispy_Chicken_Nuggets
-:Crispy_Chicken_Nuggets rdf:type owl:Class ;
-                        rdfs:subClassOf :Chicken .
+SubClassOf(:Homestyle_Avocado_BLT_Chicken_Sandwich :Chicken_Sandwich)
 
+# Class: :Homestyle_Bacon_Jalapeno_Chicken_Sandwich (:Homestyle_Bacon_Jalapeno_Chicken_Sandwich)
 
-###  http://sbmi.uth.edu/ontology/offf#Crispy_Chicken_Sandwich
-:Crispy_Chicken_Sandwich rdf:type owl:Class ;
-                         rdfs:subClassOf :Chicken_Sandwich .
+SubClassOf(:Homestyle_Bacon_Jalapeno_Chicken_Sandwich :Chicken_Sandwich)
 
+# Class: :Homestyle_Barbeque_Chicken_Sandwich (:Homestyle_Barbeque_Chicken_Sandwich)
 
-###  http://sbmi.uth.edu/ontology/offf#Croissant
-:Croissant rdf:type owl:Class ;
-           rdfs:subClassOf :Sandwich .
+SubClassOf(:Homestyle_Barbeque_Chicken_Sandwich :Chicken_Sandwich)
 
+# Class: :Homestyle_Chicken_Sandwich (:Homestyle_Chicken_Sandwich)
 
-###  http://sbmi.uth.edu/ontology/offf#Crunch_Taco
-:Crunch_Taco rdf:type owl:Class ;
-             rdfs:subClassOf :Taco .
+SubClassOf(:Homestyle_Chicken_Sandwich :Chicken_Sandwich)
 
+# Class: :Honey_BBQ_Glazed_Chicken_Strip_Basket (:Honey_BBQ_Glazed_Chicken_Strip_Basket)
 
-###  http://sbmi.uth.edu/ontology/offf#Crunchy_Taco_Supreme
-:Crunchy_Taco_Supreme rdf:type owl:Class ;
-                      rdfs:subClassOf :Taco .
+SubClassOf(:Honey_BBQ_Glazed_Chicken_Strip_Basket :Chicken_Strip_Basket)
 
+# Class: :Honey_BBQ_Glazed_Chicken_Strip_Basket_Combo (:Honey_BBQ_Glazed_Chicken_Strip_Basket_Combo)
 
-###  http://sbmi.uth.edu/ontology/offf#Cucumbers
-:Cucumbers rdf:type owl:Class ;
-           rdfs:subClassOf :Ingredient .
+SubClassOf(:Honey_BBQ_Glazed_Chicken_Strip_Basket_Combo :Honey_BBQ_Glazed_Chicken_Strip_Basket)
 
+# Class: :Honey_Mustard (:Honey_Mustard)
 
-###  http://sbmi.uth.edu/ontology/offf#Culture
-:Culture rdf:type owl:Class ;
-         rdfs:subClassOf :Ingredient .
+SubClassOf(:Honey_Mustard :Mustard)
 
+# Class: :Hot_Chocolate (:Hot_Chocolate)
 
-###  http://sbmi.uth.edu/ontology/offf#DQ_Sandwich
-:DQ_Sandwich rdf:type owl:Class ;
-             rdfs:subClassOf :Ice_Cream .
+SubClassOf(:Hot_Chocolate :Fast_Food_Beverage)
 
+# Class: :Hot_Desserts_a_la_Mode (:Hot_Desserts_a_la_Mode)
 
-###  http://sbmi.uth.edu/ontology/offf#DQ_Treatzza_Pizza
-:DQ_Treatzza_Pizza rdf:type owl:Class ;
-                   rdfs:subClassOf :Cake .
+SubClassOf(:Hot_Desserts_a_la_Mode :Fast_Food_Dessert)
 
+# Class: :Hot_Dog (:Hot_Dog)
 
-###  http://sbmi.uth.edu/ontology/offf#Dairy_Queen_Signature_All_Ocassion_Round_Cake
-:Dairy_Queen_Signature_All_Ocassion_Round_Cake rdf:type owl:Class ;
-                                               rdfs:subClassOf :Cake .
+SubClassOf(:Hot_Dog :Fast_Food_Sandwich)
 
+# Class: :Hot_Fudge_Shake (:Hot_Fudge_Shake)
 
-###  http://sbmi.uth.edu/ontology/offf#Dairy_Queen_Signature_All_Ocassion_Sheet_Cake
-:Dairy_Queen_Signature_All_Ocassion_Sheet_Cake rdf:type owl:Class ;
-                                               rdfs:subClassOf :Cake .
+SubClassOf(:Hot_Fudge_Shake :Shake)
 
+# Class: :Hot_Fudge_Sundae (:Hot_Fudge_Sundae)
 
-###  http://sbmi.uth.edu/ontology/offf#Dessert
-:Dessert rdf:type owl:Class ;
-         rdfs:subClassOf :Fast_Food_Fact .
+SubClassOf(:Hot_Fudge_Sundae :Sundae)
 
+# Class: :Hotcakes (:Hotcakes)
 
-###  http://sbmi.uth.edu/ontology/offf#Diet_Coke
-:Diet_Coke rdf:type owl:Class ;
-           rdfs:subClassOf :Soft_Drink .
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> :Hotcakes "Pancakes")
+EquivalentClasses(:Hotcakes :Pancakes)
+SubClassOf(:Hotcakes :Fast_Food_Breakfast_Item)
 
+# Class: :Hotcakes_Breakfast (:Hotcakes_Breakfast)
 
-###  http://sbmi.uth.edu/ontology/offf#Dietary_Fibre_Data
-:Dietary_Fibre_Data rdf:type owl:Class ;
-                    rdfs:subClassOf :Carbohydrates_Data .
+SubClassOf(:Hotcakes_Breakfast :Hotcakes)
 
+# Class: :Hotcakes_and_Sausages (:Hotcakes_and_Sausages)
 
-###  http://sbmi.uth.edu/ontology/offf#Dilly_Bar
-:Dilly_Bar rdf:type owl:Class ;
-           rdfs:subClassOf :Ice_Cream .
+SubClassOf(:Hotcakes_and_Sausages :Hotcakes)
 
+# Class: :Ice_Cream (:Ice_Cream)
 
-###  http://sbmi.uth.edu/ontology/offf#Dipped_Strawberry_Cake_Cupfection
-:Dipped_Strawberry_Cake_Cupfection rdf:type owl:Class ;
-                                   rdfs:subClassOf :Royal_Treats .
+SubClassOf(:Ice_Cream :Fast_Food_Dessert)
 
+# Class: :Ice_Cream_Bar (:Ice_Cream_Bar)
 
-###  http://sbmi.uth.edu/ontology/offf#Double_Meat_Whataburger_Jr
-:Double_Meat_Whataburger_Jr rdf:type owl:Class ;
-                            rdfs:subClassOf :Whataburger_Jr .
+SubClassOf(:Ice_Cream_Bar :Ice_Cream)
 
+# Class: :Ice_Cream_Cake (:Ice_Cream_Cake)
 
-###  http://sbmi.uth.edu/ontology/offf#Double_Quarter_Pounder_with_Cheese
-:Double_Quarter_Pounder_with_Cheese rdf:type owl:Class ;
-                                    rdfs:subClassOf :Hamburger .
+SubClassOf(:Ice_Cream_Cake :Cake)
+SubClassOf(:Ice_Cream_Cake :Ice_Cream)
 
+# Class: :Ice_Cream_Sandwich (:Ice_Cream_Sandwich)
 
-###  http://sbmi.uth.edu/ontology/offf#Double_Stack
-:Double_Stack rdf:type owl:Class ;
-              rdfs:subClassOf :Hamburger .
+SubClassOf(:Ice_Cream_Sandwich :Ice_Cream)
 
+# Class: :Iced_Caramel_Coffee (:Iced_Caramel_Coffee)
 
-###  http://sbmi.uth.edu/ontology/offf#Double_cheeseburger
-:Double_cheeseburger rdf:type owl:Class ;
-                     rdfs:subClassOf :Cheeseburger .
+SubClassOf(:Iced_Caramel_Coffee :Iced_Coffee)
 
+# Class: :Iced_Caramel_Macchiato (:Iced_Caramel_Macchiato)
 
-###  http://sbmi.uth.edu/ontology/offf#Dr_Pepper
-:Dr_Pepper rdf:type owl:Class ;
-           rdfs:subClassOf :Shake .
+SubClassOf(:Iced_Caramel_Macchiato ObjectIntersectionOf(:Iced_Coffee :Macchiato))
 
+# Class: :Iced_Caramel_Mocha (:Iced_Caramel_Mocha)
 
-###  http://sbmi.uth.edu/ontology/offf#Dr_Pepper_Soft_Drink
-:Dr_Pepper_Soft_Drink rdf:type owl:Class ;
-                      rdfs:subClassOf :Soft_Drink .
+SubClassOf(:Iced_Caramel_Mocha :Iced_Coffee)
+SubClassOf(:Iced_Caramel_Mocha :Mocha)
 
+# Class: :Iced_Coffee (:Iced_Coffee)
 
-###  http://sbmi.uth.edu/ontology/offf#Egg_McMuffin
-:Egg_McMuffin rdf:type owl:Class ;
-              rdfs:subClassOf :McMuffin .
+SubClassOf(:Iced_Coffee :Coffee)
+SubClassOf(:Iced_Coffee :Cold_Coffee)
 
+# Class: :Iced_French_Vanilla_Coffee (:Iced_French_Vanilla_Coffee)
 
-###  http://sbmi.uth.edu/ontology/offf#Egg_and_Cheese_Biscuit
-:Egg_and_Cheese_Biscuit rdf:type owl:Class ;
-                        rdfs:subClassOf :Biscuit .
+SubClassOf(:Iced_French_Vanilla_Coffee :Iced_Coffee)
 
+# Class: :Iced_French_Vanilla_Latte (:Iced_French_Vanilla_Latte)
 
-###  http://sbmi.uth.edu/ontology/offf#Enzymes
-:Enzymes rdf:type owl:Class ;
-         rdfs:subClassOf :Ingredient .
+SubClassOf(:Iced_French_Vanilla_Latte :Iced_Coffee)
+SubClassOf(:Iced_French_Vanilla_Latte :Latte)
 
+# Class: :Iced_Latte (:Iced_Latte)
 
-###  http://sbmi.uth.edu/ontology/offf#Fanta
-:Fanta rdf:type owl:Class ;
-       rdfs:subClassOf :Soft_Drink .
+SubClassOf(:Iced_Latte :Iced_Coffee)
+SubClassOf(:Iced_Latte :Latte)
 
+# Class: :Iced_Mocha (:Iced_Mocha)
 
-###  http://sbmi.uth.edu/ontology/offf#Fast_Food_Beverage_Fact
-:Fast_Food_Beverage_Fact rdf:type owl:Class ;
-                         rdfs:subClassOf :Fast_Food_Fact .
+SubClassOf(:Iced_Mocha :Iced_Coffee)
+SubClassOf(:Iced_Mocha :Mocha)
 
+# Class: :Iced_Tea (:Iced_Tea)
 
-###  http://sbmi.uth.edu/ontology/offf#Fast_Food_Fact
-:Fast_Food_Fact rdf:type owl:Class ;
-                rdfs:subClassOf :NutritionalFact .
+SubClassOf(:Iced_Tea :Tea)
 
+# Class: :Iron (:Iron)
 
-###  http://sbmi.uth.edu/ontology/offf#Fat_Data
-:Fat_Data rdf:type owl:Class ;
-          rdfs:subClassOf :Nutritional_Component .
+SubClassOf(:Iron :Minerals_Data)
 
+# Class: :Jalapeno_and_Cheese_Whataburger (:Jalapeno_and_Cheese_Whataburger)
 
-###  http://sbmi.uth.edu/ontology/offf#Filet_o_Fish
-:Filet_o_Fish rdf:type owl:Class ;
-              rdfs:subClassOf :Fish_Sandwich .
+SubClassOf(:Jalapeno_and_Cheese_Whataburger :Cheeseburger)
 
+# Class: :Jr_Cheeseburger (:Jr_Cheeseburger)
 
-###  http://sbmi.uth.edu/ontology/offf#FishSandwich
-:FishSandwich rdf:type owl:Class ;
-              rdfs:subClassOf :Sandwich .
+SubClassOf(:Jr_Cheeseburger :Cheeseburger)
 
+# Class: :Jr_Cheeseburger_Deluxe (:Jr_Cheeseburger_Deluxe)
 
-###  http://sbmi.uth.edu/ontology/offf#Fish_Sandwich
-:Fish_Sandwich rdf:type owl:Class ;
-               rdfs:subClassOf :Sandwich .
+SubClassOf(:Jr_Cheeseburger_Deluxe :Jr_Cheeseburger)
 
+# Class: :Julius_Original (:Julius_Original)
 
-###  http://sbmi.uth.edu/ontology/offf#Flamethrower_Grillburger
-:Flamethrower_Grillburger rdf:type owl:Class ;
-                          rdfs:subClassOf :Grillburger .
+AnnotationAssertion(<http://purl.org/dc/terms/description> :Julius_Original "beverage that is mixture of ice, fruit, sweetener, milk, powdered egg whites and vanilla flavoring, https://en.wikipedia.org/wiki/Orange_Julius")
+SubClassOf(:Julius_Original :Fast_Food_Beverage)
 
+# Class: :Kale_Crunch_Side (:Kale_Crunch_Side)
 
-###  http://sbmi.uth.edu/ontology/offf#Flour
-:Flour rdf:type owl:Class ;
-       rdfs:subClassOf :Ingredient .
+SubClassOf(:Kale_Crunch_Side :Fast_Food_Sides)
 
+# Class: :Lactic_Acid_Ingredient (:Lactic_Acid_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Frappe
-:Frappe rdf:type owl:Class ;
-        rdfs:subClassOf :Coffee_Fact .
+SubClassOf(:Lactic_Acid_Ingredient :Food_Ingredient)
 
+# Class: :Latte (:Latte)
 
-###  http://sbmi.uth.edu/ontology/offf#French_Vanilla
-:French_Vanilla rdf:type owl:Class ;
-                rdfs:subClassOf :Cappuccino .
+SubClassOf(:Latte :Coffee)
 
+# Class: :Lemon_Pie (:Lemon_Pie)
 
-###  http://sbmi.uth.edu/ontology/offf#French_Vanilla_Latte
-:French_Vanilla_Latte rdf:type owl:Class ;
-                      rdfs:subClassOf :Latte .
+SubClassOf(:Lemon_Pie :Pie)
 
+# Class: :Lemonade (:Lemonade)
 
-###  http://sbmi.uth.edu/ontology/offf#Fries
-:Fries rdf:type owl:Class ;
-       rdfs:subClassOf :Sides .
+SubClassOf(:Lemonade :Fast_Food_Beverage)
 
+# Class: :Lemonade_Twisty_Misty_Slush (:Lemonade_Twisty_Misty_Slush)
 
-###  http://sbmi.uth.edu/ontology/offf#Fries_Dairy_Queen
-:Fries_Dairy_Queen rdf:type owl:Class ;
-                   rdfs:subClassOf :Fries .
+SubClassOf(:Lemonade_Twisty_Misty_Slush :Slushie)
 
+# Class: :Lettuce_Ingredient (:Lettuce_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Fries_Kids_Dairy_Queen
-:Fries_Kids_Dairy_Queen rdf:type owl:Class ;
-                        rdfs:subClassOf :Fries .
+SubClassOf(:Lettuce_Ingredient :Food_Ingredient)
 
+# Class: :Light_Soda (:Light_Soda)
 
-###  http://sbmi.uth.edu/ontology/offf#FrostedCoffee
-:FrostedCoffee rdf:type owl:Class ;
-               rdfs:subClassOf :Coffee_Fact .
+SubClassOf(:Light_Soda :Soft_Drink)
 
+# Class: :Macchiato (:Macchiato)
 
-###  http://sbmi.uth.edu/ontology/offf#Frosted_Animal_Cookie_Blizzard_Treat
-:Frosted_Animal_Cookie_Blizzard_Treat rdf:type owl:Class ;
-                                      rdfs:subClassOf :Blizzard_Treat .
+SubClassOf(:Macchiato :Coffee)
 
+# Class: :Macorni_and_Cheese (:Macorni_and_Cheese)
 
-###  http://sbmi.uth.edu/ontology/offf#Frosted_Coffee
-:Frosted_Coffee rdf:type owl:Class ;
-                rdfs:subClassOf :Coffee_Fact .
+SubClassOf(:Macorni_and_Cheese :Fast_Food_Sides)
 
+# Class: :Maltodextrin_Ingredient (:Maltodextrin_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Frosted_Lemonade
-:Frosted_Lemonade rdf:type owl:Class ;
-                  rdfs:subClassOf :Lemonade .
+SubClassOf(:Maltodextrin_Ingredient :Food_Ingredient)
 
+# Class: :Mango_Passion_Tea_Lemonade (:Mango_Passion_Tea_Lemonade)
 
-###  http://sbmi.uth.edu/ontology/offf#Fruit
-:Fruit rdf:type owl:Class ;
-       rdfs:subClassOf :Sides .
+SubClassOf(:Mango_Passion_Tea_Lemonade :Lemonade)
 
+# Class: :Mango_Pineapple_Smoothie (:Mango_Pineapple_Smoothie)
 
-###  http://sbmi.uth.edu/ontology/offf#Fruit_Cup
-:Fruit_Cup rdf:type owl:Class ;
-           rdfs:subClassOf :Sides .
+SubClassOf(:Mango_Pineapple_Smoothie :Smoothie)
 
+# Class: :Maple_Bacon_Chicken_Croissant (:Maple_Bacon_Chicken_Croissant)
 
-###  http://sbmi.uth.edu/ontology/offf#Fruit_Juice
-:Fruit_Juice rdf:type owl:Class ;
-             rdfs:subClassOf :Fast_Food_Beverage_Fact .
+SubClassOf(:Maple_Bacon_Chicken_Croissant :Croissant_Sandwich)
 
+# Class: :McGriddles (:McGriddles)
 
-###  http://sbmi.uth.edu/ontology/offf#Fruit_and_Maple_Oatmeal
-:Fruit_and_Maple_Oatmeal rdf:type owl:Class ;
-                         rdfs:subClassOf :Breakfast .
+SubClassOf(:McGriddles :Breakfast_Sandwich)
 
+# Class: :McMuffin (:McMuffin)
 
-###  http://sbmi.uth.edu/ontology/offf#Fudge_Stuffed_Cookie
-:Fudge_Stuffed_Cookie rdf:type owl:Class ;
-                      rdfs:subClassOf :Hot_Desserts_a_la_Mode .
+SubClassOf(:McMuffin :Breakfast_Sandwich)
 
+# Class: :Milk (:Milk)
 
-###  http://sbmi.uth.edu/ontology/offf#Garden
-:Garden rdf:type owl:Class ;
-        rdfs:subClassOf :Salad .
+SubClassOf(:Milk :Fast_Food_Beverage)
 
+# Class: :Milk_Ingredient (:Milk_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Garden_Herb_Ranch
-:Garden_Herb_Ranch rdf:type owl:Class ;
-                   rdfs:subClassOf :Ranch .
+SubClassOf(:Milk_Ingredient :Food_Ingredient)
 
+# Class: :Minerals_Data (:Minerals_Data)
 
-###  http://sbmi.uth.edu/ontology/offf#Grillburger
-:Grillburger rdf:type owl:Class ;
-             rdfs:subClassOf :Sandwich .
+SubClassOf(:Minerals_Data :Nutritional_Component)
 
+# Class: :Mini_Blizzard_Cake (:Mini_Blizzard_Cake)
 
-###  http://sbmi.uth.edu/ontology/offf#Grilled
-:Grilled rdf:type owl:Class ;
-         rdfs:subClassOf :Chicken_Sandwich .
+AnnotationAssertion(owl:deprecated :Mini_Blizzard_Cake "true"^^xsd:boolean)
+SubClassOf(:Mini_Blizzard_Cake :Blizzard_Cake)
 
+# Class: :Mix_by_Sprite_Tropic_Berry (:Mix_by_Sprite_Tropic_Berry)
 
-###  http://sbmi.uth.edu/ontology/offf#Grilled_Asiago_Ranch_Club
-:Grilled_Asiago_Ranch_Club rdf:type owl:Class ;
-                           rdfs:subClassOf :Chicken_Sandwich .
+SubClassOf(:Mix_by_Sprite_Tropic_Berry :Light_Soda)
 
+# Class: :Mocha (:Mocha)
 
-###  http://sbmi.uth.edu/ontology/offf#Grilled_Avocado_BLT_Chicken_Sandwich
-:Grilled_Avocado_BLT_Chicken_Sandwich rdf:type owl:Class ;
-                                      rdfs:subClassOf :Chicken_Sandwich .
+SubClassOf(:Mocha :Coffee)
 
+# Class: :Mocha_Frappe (:Mocha_Frappe)
 
-###  http://sbmi.uth.edu/ontology/offf#Grilled_Bacon_Jalapeno_Chicken_Sandwich
-:Grilled_Bacon_Jalapeno_Chicken_Sandwich rdf:type owl:Class ;
-                                         rdfs:subClassOf :Chicken_Sandwich .
+SubClassOf(:Mocha_Frappe :Frappe)
 
+# Class: :Mocha_MooLatte (:Mocha_MooLatte)
 
-###  http://sbmi.uth.edu/ontology/offf#Grilled_Barbecue_Chicken_Sandwich
-:Grilled_Barbecue_Chicken_Sandwich rdf:type owl:Class ;
-                                   rdfs:subClassOf :Chicken_Sandwich .
+SubClassOf(:Mocha_MooLatte :Cold_Coffee)
+SubClassOf(:Mocha_MooLatte :Latte)
 
+# Class: :Mushroom_Swiss_Burger (:Mushroom_Swiss_Burger)
 
-###  http://sbmi.uth.edu/ontology/offf#Grilled_Chicken_Sandwich
-:Grilled_Chicken_Sandwich rdf:type owl:Class ;
-                          rdfs:subClassOf :Chicken_Sandwich .
+SubClassOf(:Mushroom_Swiss_Burger :Cheeseburger)
 
+# Class: :Mustard (:Mustard)
 
-###  http://sbmi.uth.edu/ontology/offf#Grilled_Steak_Soft_Taco
-:Grilled_Steak_Soft_Taco rdf:type owl:Class ;
-                         rdfs:subClassOf :Taco .
+SubClassOf(:Mustard :Fast_Food_Condiment)
 
+# Class: :Mustard_Seed_Ingredient (:Mustard_Seed_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Gum_Arabic
-:Gum_Arabic rdf:type owl:Class ;
-            rdfs:subClassOf :Ingredient .
+SubClassOf(:Mustard_Seed_Ingredient :Food_Ingredient)
 
+# Class: :Nacho_Cheese_Doritos_Loco_Taco (:Nacho_Cheese_Doritos_Loco_Taco)
 
-###  http://sbmi.uth.edu/ontology/offf#Hamburger
-:Hamburger rdf:type owl:Class ;
-           rdfs:subClassOf :Sandwich .
+SubClassOf(:Nacho_Cheese_Doritos_Loco_Taco :Fast_Food_Taco)
 
+# Class: :Nacho_Cheese_Doritos_Locos_Taco (:Nacho_Cheese_Doritos_Locos_Taco)
 
-###  http://sbmi.uth.edu/ontology/offf#Hamburger_Combo
-:Hamburger_Combo rdf:type owl:Class ;
-                 rdfs:subClassOf :Hamburger_Dairy_Queen .
+SubClassOf(:Nacho_Cheese_Doritos_Locos_Taco :Fast_Food_Taco)
 
+# Class: :Natural_Flavors (:Natural_Flavors)
 
-###  http://sbmi.uth.edu/ontology/offf#Hamburger_Dairy_Queen
-:Hamburger_Dairy_Queen rdf:type owl:Class ;
-                       rdfs:subClassOf :Hamburger .
+SubClassOf(:Natural_Flavors :Food_Ingredient)
 
+# Class: :Non-Dairy_Dilly_Bar (:Non-Dairy_Dilly_Bar)
 
-###  http://sbmi.uth.edu/ontology/offf#Hamburger_Kids_Dairy_Queen
-:Hamburger_Kids_Dairy_Queen rdf:type owl:Class ;
-                            rdfs:subClassOf :Hamburger .
+SubClassOf(:Non-Dairy_Dilly_Bar :Ice_Cream_Bar)
 
+# Class: :Oatmeal_Bar (:Oatmeal_Bar)
 
-###  http://sbmi.uth.edu/ontology/offf#Hash_Brown_Sticks_Whataburgers
-:Hash_Brown_Sticks_Whataburgers rdf:type owl:Class ;
-                                rdfs:subClassOf :Breakfast .
+SubClassOf(:Oatmeal_Bar :Fast_Food_Sides)
 
+# Class: :Onion_Rings (:Onion_Rings)
 
-###  http://sbmi.uth.edu/ontology/offf#Hash_Browns
-:Hash_Browns rdf:type owl:Class ;
-             rdfs:subClassOf :Breakfast .
+SubClassOf(:Onion_Rings :Fast_Food_Sides)
 
+# Class: :Onions_Ingredient (:Onions_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Heath_Blizzard_Treat
-:Heath_Blizzard_Treat rdf:type owl:Class ;
-                      rdfs:subClassOf :Blizzard_Treat .
+SubClassOf(:Onions_Ingredient :Food_Ingredient)
 
+# Class: :Orange_Juice (:Orange_Juice)
 
-###  http://sbmi.uth.edu/ontology/offf#Heath_Treatzza_Pizza
-:Heath_Treatzza_Pizza rdf:type owl:Class ;
-                      rdfs:subClassOf :DQ_Treatzza_Pizza .
+SubClassOf(:Orange_Juice :Fruit_Juice)
 
+# Class: :Orange_Julius_Original (:Orange_Julius_Original)
 
-###  http://sbmi.uth.edu/ontology/offf#High_Fructose_Corn_Syrup
-:High_Fructose_Corn_Syrup rdf:type owl:Class ;
-                          rdfs:subClassOf :Ingredient .
+SubClassOf(:Orange_Julius_Original :Julius_Original)
 
+# Class: :Oreo_Blizzard_Cake (:Oreo_Blizzard_Cake)
 
-###  http://sbmi.uth.edu/ontology/offf#Homestyle_Asiago_Ranch_Chicken_Club
-:Homestyle_Asiago_Ranch_Chicken_Club rdf:type owl:Class ;
-                                     rdfs:subClassOf :Chicken_Sandwich .
+AnnotationAssertion(owl:deprecated :Oreo_Blizzard_Cake "true"^^xsd:boolean)
+SubClassOf(:Oreo_Blizzard_Cake :Blizzard_Cake)
 
+# Class: :Oreo_Mini (:Oreo_Mini)
 
-###  http://sbmi.uth.edu/ontology/offf#Homestyle_Avocado_BLT_Chicken_Sandwich
-:Homestyle_Avocado_BLT_Chicken_Sandwich rdf:type owl:Class ;
-                                        rdfs:subClassOf :Chicken_Sandwich .
+AnnotationAssertion(owl:deprecated :Oreo_Mini "true"^^xsd:boolean)
+SubClassOf(:Oreo_Mini :Mini_Blizzard_Cake)
 
+# Class: :Organic_Apple_Juice (:Organic_Apple_Juice)
 
-###  http://sbmi.uth.edu/ontology/offf#Homestyle_Bacon_Jalapeno_Chicken_Sandwich
-:Homestyle_Bacon_Jalapeno_Chicken_Sandwich rdf:type owl:Class ;
-                                           rdfs:subClassOf :Chicken_Sandwich .
+SubClassOf(:Organic_Apple_Juice :Apple_Juice)
 
+# Class: :Pancake_Platter_Whataburgers (:Pancake_Platter_Whataburgers)
 
-###  http://sbmi.uth.edu/ontology/offf#Homestyle_Barbeque_Chicken_Sandwich
-:Homestyle_Barbeque_Chicken_Sandwich rdf:type owl:Class ;
-                                     rdfs:subClassOf :Chicken_Sandwich .
+SubClassOf(:Pancake_Platter_Whataburgers :Breakfast_Platter)
 
+# Class: :Pancakes (:Pancakes)
 
-###  http://sbmi.uth.edu/ontology/offf#Homestyle_Chicken_Sandwich
-:Homestyle_Chicken_Sandwich rdf:type owl:Class ;
-                            rdfs:subClassOf :Chicken_Sandwich .
+SubClassOf(:Pancakes :Fast_Food_Breakfast_Item)
 
+# Class: :Paprika_Ingredient (:Paprika_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Honest_Kids_Appely_Ever_After_Organic_Juice_Drink
-:Honest_Kids_Appely_Ever_After_Organic_Juice_Drink rdf:type owl:Class ;
-                                                   rdfs:subClassOf :Apple_Juice .
+SubClassOf(:Paprika_Ingredient :Food_Ingredient)
 
+# Class: :Parmesan_Caesar_Chicken (:Parmesan_Caesar_Chicken)
 
-###  http://sbmi.uth.edu/ontology/offf#Honey_BBQ_Glazed_Chicken_Strip_Basket
-:Honey_BBQ_Glazed_Chicken_Strip_Basket rdf:type owl:Class ;
-                                       rdfs:subClassOf :Chicken_Strip_Basket .
+SubClassOf(:Parmesan_Caesar_Chicken :Chicken_Salad)
 
+# Class: :Parmesan_Caesar_Chicken_Salad_Dressing (:Parmesan_Caesar_Chicken_Salad_Dressing)
 
-###  http://sbmi.uth.edu/ontology/offf#Honey_BBQ_Glazed_Chicken_Strip_Basket_Combo
-:Honey_BBQ_Glazed_Chicken_Strip_Basket_Combo rdf:type owl:Class ;
-                                             rdfs:subClassOf :Honey_BBQ_Glazed_Chicken_Strip_Basket .
+SubClassOf(:Parmesan_Caesar_Chicken_Salad_Dressing :Salad_Dressing)
 
+# Class: :Peach_Lemonade (:Peach_Lemonade)
 
-###  http://sbmi.uth.edu/ontology/offf#Honey_BBQ_Glazed_Chicken_Strip_Basket_Combo_Wendys
-:Honey_BBQ_Glazed_Chicken_Strip_Basket_Combo_Wendys rdf:type owl:Class ;
-                                                    rdfs:subClassOf :Chicken .
+SubClassOf(:Peach_Lemonade :Lemonade)
 
+# Class: :Peanut_Butter_Parfait (:Peanut_Butter_Parfait)
 
-###  http://sbmi.uth.edu/ontology/offf#Honey_BBQ_Glazed_Chicken_Strip_Basket_Dairy_Queen
-:Honey_BBQ_Glazed_Chicken_Strip_Basket_Dairy_Queen rdf:type owl:Class ;
-                                                   rdfs:subClassOf :Chicken .
+SubClassOf(:Peanut_Butter_Parfait :Royal_Treats)
 
+# Class: :Peanut_Butter_Shake (:Peanut_Butter_Shake)
 
-###  http://sbmi.uth.edu/ontology/offf#Honey_Mustard
-:Honey_Mustard rdf:type owl:Class ;
-               rdfs:subClassOf :Mustard .
+SubClassOf(:Peanut_Butter_Shake :Shake)
 
+# Class: :Peanut_Butter_Sundae (:Peanut_Butter_Sundae)
 
-###  http://sbmi.uth.edu/ontology/offf#HotDog
-:HotDog rdf:type owl:Class ;
-        rdfs:subClassOf :Sandwich .
+SubClassOf(:Peanut_Butter_Sundae :Sundae)
 
+# Class: :Peanut_Oil_Ingredient (:Peanut_Oil_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Hot_Apple
-:Hot_Apple rdf:type owl:Class ;
-           rdfs:subClassOf :Pie .
+SubClassOf(:Peanut_Oil_Ingredient :Food_Ingredient)
 
+# Class: :Pepper_Ingredient (:Pepper_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Hot_Chocolate
-:Hot_Chocolate rdf:type owl:Class ;
-               rdfs:subClassOf :Fast_Food_Beverage_Fact .
+SubClassOf(:Pepper_Ingredient :Food_Ingredient)
 
+# Class: :Pie (:Pie)
 
-###  http://sbmi.uth.edu/ontology/offf#Hot_Desserts_A_La_Mode
-:Hot_Desserts_A_La_Mode rdf:type owl:Class ;
-                        rdfs:subClassOf :Dessert .
+SubClassOf(:Pie :Fast_Food_Dessert)
 
+# Class: :Pineapple_Sundae (:Pineapple_Sundae)
 
-###  http://sbmi.uth.edu/ontology/offf#Hot_Desserts_a_la_Mode
-:Hot_Desserts_a_la_Mode rdf:type owl:Class ;
-                        rdfs:subClassOf :Dessert .
+SubClassOf(:Pineapple_Sundae :Sundae)
 
+# Class: :Pink_Lemonade_Slushie (:Pink_Lemonade_Slushie)
 
-###  http://sbmi.uth.edu/ontology/offf#Hot_Dog
-:Hot_Dog rdf:type owl:Class ;
-         rdfs:subClassOf :Sandwich .
+SubClassOf(:Pink_Lemonade_Slushie :Slushie)
 
+# Class: :Potassium (:Potassium)
 
-###  http://sbmi.uth.edu/ontology/offf#Hot_Dog_Combo
-:Hot_Dog_Combo rdf:type owl:Class ;
-               rdfs:subClassOf :Hot_Dog .
+SubClassOf(:Potassium :Minerals_Data)
 
+# Class: :Potassium_Sorbate_Ingredient (:Potassium_Sorbate_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Hot_Dog_Dairy_Queen
-:Hot_Dog_Dairy_Queen rdf:type owl:Class ;
-                     rdfs:subClassOf :Hot_Dog .
+SubClassOf(:Potassium_Sorbate_Ingredient :Food_Ingredient)
 
+# Class: :Potatoes_Ingredient (:Potatoes_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Hot_Dog_Kids_Dairy_Queen
-:Hot_Dog_Kids_Dairy_Queen rdf:type owl:Class ;
-                          rdfs:subClassOf :Hot_Dog .
+SubClassOf(:Potatoes_Ingredient :Food_Ingredient)
 
+# Class: :Pretzel (:Pretzel)
 
-###  http://sbmi.uth.edu/ontology/offf#Hot_Fudge_Shake
-:Hot_Fudge_Shake rdf:type owl:Class ;
-                 rdfs:subClassOf :Shake .
+SubClassOf(:Pretzel :Fast_Food_Sides)
 
+# Class: :Pretzel_Sticks_with_Zesty_Queso (:Pretzel_Sticks_with_Zesty_Queso)
 
-###  http://sbmi.uth.edu/ontology/offf#Hot_Fudge_Sundae
-:Hot_Fudge_Sundae rdf:type owl:Class ;
-                  rdfs:subClassOf :Sundae .
+SubClassOf(:Pretzel_Sticks_with_Zesty_Queso :Pretzel)
 
+# Class: :Protein_Data (:Protein_Data)
 
-###  http://sbmi.uth.edu/ontology/offf#Hot_Lemon
-:Hot_Lemon rdf:type owl:Class ;
-           rdfs:subClassOf :Pie .
+SubClassOf(:Protein_Data :Nutritional_Component)
 
+# Class: :Quarter_Pound_Hamburger (:Quarter_Pound_Hamburger)
 
-###  http://sbmi.uth.edu/ontology/offf#Hotcakes
-:Hotcakes rdf:type owl:Class ;
-          rdfs:subClassOf :Breakfast .
+SubClassOf(:Quarter_Pound_Hamburger :Hamburger)
 
+# Class: :Ranch (:Ranch)
 
-###  http://sbmi.uth.edu/ontology/offf#Hotcakes_Breakfast
-:Hotcakes_Breakfast rdf:type owl:Class ;
-                    rdfs:subClassOf :Hotcakes .
+SubClassOf(:Ranch :Fast_Food_Condiment)
 
+# Class: :Raspberry_Fudge_Bliss_Blizzard_Cake (:Raspberry_Fudge_Bliss_Blizzard_Cake)
 
-###  http://sbmi.uth.edu/ontology/offf#Hotcakes_and_Sausages
-:Hotcakes_and_Sausages rdf:type owl:Class ;
-                       rdfs:subClassOf :Hotcakes .
+AnnotationAssertion(owl:deprecated :Raspberry_Fudge_Bliss_Blizzard_Cake "true"^^xsd:boolean)
+SubClassOf(:Raspberry_Fudge_Bliss_Blizzard_Cake :Blizzard_Cake)
 
+# Class: :Reese_Peanut_Butter_Cup_Blizzard_Cake (:Reese_Peanut_Butter_Cup_Blizzard_Cake)
 
-###  http://sbmi.uth.edu/ontology/offf#IceCream
-:IceCream rdf:type owl:Class ;
-          rdfs:subClassOf :Dessert .
+AnnotationAssertion(owl:deprecated :Reese_Peanut_Butter_Cup_Blizzard_Cake "true"^^xsd:boolean)
+SubClassOf(:Reese_Peanut_Butter_Cup_Blizzard_Cake :Blizzard_Cake)
 
+# Class: :Royal_Treats (:Royal_Treats)
 
-###  http://sbmi.uth.edu/ontology/offf#Ice_Cream
-:Ice_Cream rdf:type owl:Class ;
-           rdfs:subClassOf :Dessert .
+SubClassOf(:Royal_Treats :Ice_Cream)
 
+# Class: :Salad_Dressing (:Salad_Dressing)
 
-###  http://sbmi.uth.edu/ontology/offf#Iced_Caramel_Coffee
-:Iced_Caramel_Coffee rdf:type owl:Class ;
-                     rdfs:subClassOf :Coffee_Fact .
+SubClassOf(:Salad_Dressing :Fast_Food_Condiment)
 
+# Class: :Salt_Ingredient (:Salt_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Iced_Caramel_Macchiato
-:Iced_Caramel_Macchiato rdf:type owl:Class ;
-                        rdfs:subClassOf :Macchiato .
+SubClassOf(:Salt_Ingredient :Food_Ingredient)
 
+# Class: :Saturated_Fat_Data (:Saturated_Fat_Data)
 
-###  http://sbmi.uth.edu/ontology/offf#Iced_Caramel_Mocha
-:Iced_Caramel_Mocha rdf:type owl:Class ;
-                    rdfs:subClassOf :Mocha .
+SubClassOf(:Saturated_Fat_Data :Fat_Data)
 
+# Class: :Sausage_Biscuit (:Sausage_Biscuit)
 
-###  http://sbmi.uth.edu/ontology/offf#Iced_Coffee
-:Iced_Coffee rdf:type owl:Class ;
-             rdfs:subClassOf :Coffee_Fact .
+SubClassOf(:Sausage_Biscuit :Breakfast_Biscuit_Sandwich)
 
+# Class: :Sausage_Biscuit_with_Egg (:Sausage_Biscuit_with_Egg)
 
-###  http://sbmi.uth.edu/ontology/offf#Iced_French_Vanilla_Coffee
-:Iced_French_Vanilla_Coffee rdf:type owl:Class ;
-                            rdfs:subClassOf :Coffee_Fact .
+SubClassOf(:Sausage_Biscuit_with_Egg :Breakfast_Biscuit_Sandwich)
 
+# Class: :Sausage_Egg_and_Cheese_Burrito (:Sausage_Egg_and_Cheese_Burrito)
 
-###  http://sbmi.uth.edu/ontology/offf#Iced_French_Vanilla_Latte
-:Iced_French_Vanilla_Latte rdf:type owl:Class ;
-                           rdfs:subClassOf :Latte .
+SubClassOf(:Sausage_Egg_and_Cheese_Burrito :Fast_Food_Burrito)
 
+# Class: :Sausage_Egg_and_Cheese_McGriddles (:Sausage_Egg_and_Cheese_McGriddles)
 
-###  http://sbmi.uth.edu/ontology/offf#Iced_Latte
-:Iced_Latte rdf:type owl:Class ;
-            rdfs:subClassOf :Latte .
+SubClassOf(:Sausage_Egg_and_Cheese_McGriddles :McGriddles)
 
+# Class: :Sausage_Egg_and_Swiss_Croissant (:Sausage_Egg_and_Swiss_Croissant)
 
-###  http://sbmi.uth.edu/ontology/offf#Iced_Mocha
-:Iced_Mocha rdf:type owl:Class ;
-            rdfs:subClassOf :Mocha .
+SubClassOf(:Sausage_Egg_and_Swiss_Croissant :Croissant_Sandwich)
 
+# Class: :Sausage_McGriddles (:Sausage_McGriddles)
 
-###  http://sbmi.uth.edu/ontology/offf#Iced_Tea
-:Iced_Tea rdf:type owl:Class ;
-          rdfs:subClassOf :Tea .
+SubClassOf(:Sausage_McGriddles :McGriddles)
 
+# Class: :Sausage_McMuffin (:Sausage_McMuffin)
 
-###  http://sbmi.uth.edu/ontology/offf#Ingredient
-:Ingredient rdf:type owl:Class .
+SubClassOf(:Sausage_McMuffin :McMuffin)
 
+# Class: :Sausage_McMuffin_with_Egg (:Sausage_McMuffin_with_Egg)
 
-###  http://sbmi.uth.edu/ontology/offf#Iron
-:Iron rdf:type owl:Class ;
-      rdfs:subClassOf :Minerals_Data .
+SubClassOf(:Sausage_McMuffin_with_Egg :McMuffin)
 
+# Class: :Seasoned_Potatoes (:Seasoned_Potatoes)
 
-###  http://sbmi.uth.edu/ontology/offf#Jalapeno_and_Cheese_Whataburger
-:Jalapeno_and_Cheese_Whataburger rdf:type owl:Class ;
-                                 rdfs:subClassOf :Cheeseburger .
+SubClassOf(:Seasoned_Potatoes :Fast_Food_Sides)
 
+# Class: :Serving_Size_Data (:Serving_Size_Data)
 
-###  http://sbmi.uth.edu/ontology/offf#Jr_Bacon
-:Jr_Bacon rdf:type owl:Class ;
-          rdfs:subClassOf :Bacon_burger .
+SubClassOf(:Serving_Size_Data :Nutritional_Component)
 
+# Class: :Shake (:Shake)
 
-###  http://sbmi.uth.edu/ontology/offf#Jr_Cheeseburger
-:Jr_Cheeseburger rdf:type owl:Class ;
-                 rdfs:subClassOf :Cheeseburger .
+SubClassOf(:Shake :Fast_Food_Beverage)
 
+# Class: :Shredded_Chicken_Burrito (:Shredded_Chicken_Burrito)
 
-###  http://sbmi.uth.edu/ontology/offf#Jr_Cheeseburger_Deluxe
-:Jr_Cheeseburger_Deluxe rdf:type owl:Class ;
-                        rdfs:subClassOf :Jr_Cheeseburger .
+SubClassOf(:Shredded_Chicken_Burrito :Chicken_Burrito)
 
+# Class: :Side_Salad (:Side_Salad)
 
-###  http://sbmi.uth.edu/ontology/offf#Jr_Hamburger
-:Jr_Hamburger rdf:type owl:Class ;
-              rdfs:subClassOf :Hamburger .
+SubClassOf(:Side_Salad :Fast_Food_Sides)
 
+# Class: :Silicon_Dioxide_Ingredient (:Silicon_Dioxide_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Julius_Original
-:Julius_Original rdf:type owl:Class ;
-                 rdfs:subClassOf :Fast_Food_Beverage_Fact .
+SubClassOf(:Silicon_Dioxide_Ingredient :Food_Ingredient)
 
+# Class: :Slushie (:Slushie)
 
-###  http://sbmi.uth.edu/ontology/offf#Kale_Crunch_Side
-:Kale_Crunch_Side rdf:type owl:Class ;
-                  rdfs:subClassOf :Sides .
+SubClassOf(:Slushie :Fast_Food_Beverage)
 
+# Class: :Smoothie (:Smoothie)
 
-###  http://sbmi.uth.edu/ontology/offf#Lactic_acid
-:Lactic_acid rdf:type owl:Class ;
-             rdfs:subClassOf :Ingredient .
+SubClassOf(:Smoothie :Fast_Food_Beverage)
 
+# Class: :Sodium (:Sodium)
 
-###  http://sbmi.uth.edu/ontology/offf#Latte
-:Latte rdf:type owl:Class ;
-       rdfs:subClassOf :Coffee_Fact .
+SubClassOf(:Sodium :Minerals_Data)
 
+# Class: :Sodium_Citrate_Ingredient (:Sodium_Citrate_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Lemonade
-:Lemonade rdf:type owl:Class ;
-          rdfs:subClassOf :Fast_Food_Beverage_Fact .
+SubClassOf(:Sodium_Citrate_Ingredient :Food_Ingredient)
 
+# Class: :Sodium_Data (:Sodium_Data)
 
-###  http://sbmi.uth.edu/ontology/offf#Lemonade_Twisty_Misty_Slush
-:Lemonade_Twisty_Misty_Slush rdf:type owl:Class ;
-                             rdfs:subClassOf :Misty_Beverages .
+SubClassOf(:Sodium_Data :Nutritional_Component)
 
+# Class: :Soft_Drink (:Soft_Drink)
 
-###  http://sbmi.uth.edu/ontology/offf#Lettuce
-:Lettuce rdf:type owl:Class ;
-         rdfs:subClassOf :Ingredient .
+SubClassOf(:Soft_Drink :Fast_Food_Beverage)
 
+# Class: :Soft_Taco (:Soft_Taco)
 
-###  http://sbmi.uth.edu/ontology/offf#Low_Fat_MIlk_Jug
-:Low_Fat_MIlk_Jug rdf:type owl:Class ;
-                  rdfs:subClassOf :Milk .
+SubClassOf(:Soft_Taco :Fast_Food_Taco)
 
+# Class: :Soft_Taco_Supreme_Beef_Taco (:Soft_Taco_Supreme_Beef_Taco)
 
-###  http://sbmi.uth.edu/ontology/offf#MInute_Maid_Premium_Orange_Juice
-:MInute_Maid_Premium_Orange_Juice rdf:type owl:Class ;
-                                  rdfs:subClassOf :Orange_Juice .
+SubClassOf(:Soft_Taco_Supreme_Beef_Taco :Soft_Taco)
 
+# Class: :Sorbic_Acid_Ingredient (:Sorbic_Acid_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Mac_and_Cheese
-:Mac_and_Cheese rdf:type owl:Class ;
-                rdfs:subClassOf :Sides .
+SubClassOf(:Sorbic_Acid_Ingredient :Food_Ingredient)
 
+# Class: :Southwest_Avocado_Chicken_Salad (:Southwest_Avocado_Chicken_Salad)
 
-###  http://sbmi.uth.edu/ontology/offf#Macchiato
-:Macchiato rdf:type owl:Class ;
-           rdfs:subClassOf :Coffee_Fact .
+SubClassOf(:Southwest_Avocado_Chicken_Salad :Chicken_Salad)
 
+# Class: :Southwest_Avocado_Chicken_Salad_Dressing (:Southwest_Avocado_Chicken_Salad_Dressing)
 
-###  http://sbmi.uth.edu/ontology/offf#Maltodextrin
-:Maltodextrin rdf:type owl:Class ;
-              rdfs:subClassOf :Ingredient .
+SubClassOf(:Southwest_Avocado_Chicken_Salad_Dressing :Salad_Dressing)
 
+# Class: :Soybean_Oil_Ingredient (:Soybean_Oil_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Mango_Passion_Tea
-:Mango_Passion_Tea rdf:type owl:Class ;
-                   rdfs:subClassOf :Lemonade .
+SubClassOf(:Soybean_Oil_Ingredient :Food_Ingredient)
 
+# Class: :Spicy_Asiago_Ranch_Club (:Spicy_Asiago_Ranch_Club)
 
-###  http://sbmi.uth.edu/ontology/offf#Mango_Pineapple
-:Mango_Pineapple rdf:type owl:Class ;
-                 rdfs:subClassOf :Smoothie .
+SubClassOf(:Spicy_Asiago_Ranch_Club :Chicken_Sandwich)
 
+# Class: :Spicy_Avocado_BLT_Chicken_Sandwich (:Spicy_Avocado_BLT_Chicken_Sandwich)
 
-###  http://sbmi.uth.edu/ontology/offf#Maple_Bacon_Chicken_Croissant
-:Maple_Bacon_Chicken_Croissant rdf:type owl:Class ;
-                               rdfs:subClassOf :Croissant .
+SubClassOf(:Spicy_Avocado_BLT_Chicken_Sandwich :Spicy_Chicken_Sandwich)
 
+# Class: :Spicy_Barbeque_Chicken_Sandwich (:Spicy_Barbeque_Chicken_Sandwich)
 
-###  http://sbmi.uth.edu/ontology/offf#Market
-:Market rdf:type owl:Class ;
-        rdfs:subClassOf :Salad .
+SubClassOf(:Spicy_Barbeque_Chicken_Sandwich :Spicy_Chicken_Sandwich)
 
+# Class: :Spicy_Chicken_Nugget (:Spicy_Chicken_Nugget)
 
-###  http://sbmi.uth.edu/ontology/offf#McChicken
-:McChicken rdf:type owl:Class ;
-           rdfs:subClassOf :Chicken_Sandwich .
+SubClassOf(:Spicy_Chicken_Nugget :Chicken_Nuggets)
 
+# Class: :Spicy_Chicken_Sandwich (:Spicy_Chicken_Sandwich)
 
-###  http://sbmi.uth.edu/ontology/offf#McDonalds_Cheeseburger
-:McDonalds_Cheeseburger rdf:type owl:Class ;
-                        rdfs:subClassOf :Cheeseburger .
+SubClassOf(:Spicy_Chicken_Sandwich :Chicken_Sandwich)
 
+# Class: :Spicy_Potato_Soft_Taco (:Spicy_Potato_Soft_Taco)
 
-###  http://sbmi.uth.edu/ontology/offf#McDouble
-:McDouble rdf:type owl:Class ;
-          rdfs:subClassOf :Hamburger .
+SubClassOf(:Spicy_Potato_Soft_Taco :Soft_Taco)
 
+# Class: :Spicy_Southwest_Salad (:Spicy_Southwest_Salad)
 
-###  http://sbmi.uth.edu/ontology/offf#McGriddles
-:McGriddles rdf:type owl:Class ;
-            rdfs:subClassOf :Breakfast .
+SubClassOf(:Spicy_Southwest_Salad :Fast_Food_Salad)
 
+# Class: :Sprite_Soft_Drink (:Sprite_Soft_Drink)
 
-###  http://sbmi.uth.edu/ontology/offf#McMuffin
-:McMuffin rdf:type owl:Class ;
-          rdfs:subClassOf :Breakfast .
+SubClassOf(:Sprite_Soft_Drink :Light_Soda)
 
+# Class: :Sriracha (:Sriracha)
 
-###  http://sbmi.uth.edu/ontology/offf#Milk
-:Milk rdf:type owl:Class ;
-      rdfs:subClassOf :Fast_Food_Beverage_Fact ,
-                      :Ingredient .
+SubClassOf(:Sriracha :Fast_Food_Condiment)
 
+# Class: :Strawberry (:Strawberry)
 
-###  http://sbmi.uth.edu/ontology/offf#Minerals_Data
-:Minerals_Data rdf:type owl:Class ;
-               rdfs:subClassOf :Nutritional_Component .
+SubClassOf(:Strawberry :Fruit)
 
+# Class: :Strawberry_Banana_Julius_Original (:Strawberry_Banana_Julius_Original)
 
-###  http://sbmi.uth.edu/ontology/offf#Mini_Blizzard_Cake
-:Mini_Blizzard_Cake rdf:type owl:Class ;
-                    rdfs:subClassOf :Blizzard_Cake .
+SubClassOf(:Strawberry_Banana_Julius_Original :Julius_Original)
 
+# Class: :Strawberry_Banana_Smoothie (:Strawberry_Banana_Smoothie)
 
-###  http://sbmi.uth.edu/ontology/offf#Minute_Maid_Blue_Raspberry_Slushie
-:Minute_Maid_Blue_Raspberry_Slushie rdf:type owl:Class ;
-                                    rdfs:subClassOf :Slushie .
+SubClassOf(:Strawberry_Banana_Smoothie :Smoothie)
 
+# Class: :Strawberry_Lemonade (:Strawberry_Lemonade)
 
-###  http://sbmi.uth.edu/ontology/offf#Minute_Maid_Fruit_Punch_Slushie
-:Minute_Maid_Fruit_Punch_Slushie rdf:type owl:Class ;
-                                 rdfs:subClassOf :Slushie .
+SubClassOf(:Strawberry_Lemonade :Lemonade)
 
+# Class: :Strawberry_Malt (:Strawberry_Malt)
 
-###  http://sbmi.uth.edu/ontology/offf#Minute_Maid_Pink_Lemonade_Slushie
-:Minute_Maid_Pink_Lemonade_Slushie rdf:type owl:Class ;
-                                   rdfs:subClassOf :Slushie .
+EquivalentClasses(:Strawberry_Malt :Strawberry_Shake)
+SubClassOf(:Strawberry_Malt :Shake)
 
+# Class: :Strawberry_Shake (:Strawberry_Shake)
 
-###  http://sbmi.uth.edu/ontology/offf#Misty_Beverages
-:Misty_Beverages rdf:type owl:Class ;
-                 rdfs:subClassOf :Fast_Food_Beverage_Fact .
+SubClassOf(:Strawberry_Shake :Shake)
 
+# Class: :Strawberry_Sundae (:Strawberry_Sundae)
 
-###  http://sbmi.uth.edu/ontology/offf#Misty_Freeze
-:Misty_Freeze rdf:type owl:Class ;
-              rdfs:subClassOf :Misty_Beverages .
+SubClassOf(:Strawberry_Sundae :Sundae)
 
+# Class: :Sugar_Cookie (:Sugar_Cookie)
 
-###  http://sbmi.uth.edu/ontology/offf#Misty_Slush
-:Misty_Slush rdf:type owl:Class ;
-             rdfs:subClassOf :Misty_Beverages .
+SubClassOf(:Sugar_Cookie :Cookie)
 
+# Class: :Sugar_Data (:Sugar_Data)
 
-###  http://sbmi.uth.edu/ontology/offf#Mix_by_Sprite_Tropic_Berry
-:Mix_by_Sprite_Tropic_Berry rdf:type owl:Class ;
-                            rdfs:subClassOf :Soft_Drink .
+SubClassOf(:Sugar_Data :Carbohydrates_Data)
 
+# Class: :Sugar_Ingredient (:Sugar_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Mocha
-:Mocha rdf:type owl:Class ;
-       rdfs:subClassOf :Coffee_Fact .
+SubClassOf(:Sugar_Ingredient :Food_Ingredient)
 
+# Class: :Summer_Strawberry (:Summer_Strawberry)
 
-###  http://sbmi.uth.edu/ontology/offf#Mocha_Frappe
-:Mocha_Frappe rdf:type owl:Class ;
-              rdfs:subClassOf :Frappe .
+SubClassOf(:Summer_Strawberry :Fast_Food_Salad)
 
+# Class: :Summer_Strawberry_Salad_Dressing (:Summer_Strawberry_Salad_Dressing)
 
-###  http://sbmi.uth.edu/ontology/offf#Mocha_MooLatte
-:Mocha_MooLatte rdf:type owl:Class ;
-                rdfs:subClassOf :Latte .
+SubClassOf(:Summer_Strawberry_Salad_Dressing :Salad_Dressing)
 
+# Class: :Sundae (:Sundae)
 
-###  http://sbmi.uth.edu/ontology/offf#Mushroom
-:Mushroom rdf:type owl:Class ;
-          rdfs:subClassOf :Sandwich .
+SubClassOf(:Sundae :Ice_Cream)
 
+# Class: :Sunflower_Lecithin_Ingredient (:Sunflower_Lecithin_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Mushroom_Swiss_Burger
-:Mushroom_Swiss_Burger rdf:type owl:Class ;
-                       rdfs:subClassOf :Mushroom .
+SubClassOf(:Sunflower_Lecithin_Ingredient :Food_Ingredient)
 
+# Class: :Sunflower_Oil_Ingredient (:Sunflower_Oil_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Mustard
-:Mustard rdf:type owl:Class ;
-         rdfs:subClassOf :Condiment .
+SubClassOf(:Sunflower_Oil_Ingredient :Food_Ingredient)
 
+# Class: :Sweet_Tea (:Sweet_Tea)
 
-###  http://sbmi.uth.edu/ontology/offf#Mustard_seed
-:Mustard_seed rdf:type owl:Class ;
-              rdfs:subClassOf :Ingredient .
+SubClassOf(:Sweet_Tea :Tea)
 
+# Class: :Sweet_and_Spicy_Sriracha (:Sweet_and_Spicy_Sriracha)
 
-###  http://sbmi.uth.edu/ontology/offf#Nacho_Cheese_Doritos_Loco_Taco
-:Nacho_Cheese_Doritos_Loco_Taco rdf:type owl:Class ;
-                                rdfs:subClassOf :Taco .
+SubClassOf(:Sweet_and_Spicy_Sriracha :Sriracha)
 
+# Class: :Taco_Salad (:Taco_Salad)
 
-###  http://sbmi.uth.edu/ontology/offf#Nacho_Cheese_Doritos_Locos_Taco
-:Nacho_Cheese_Doritos_Locos_Taco rdf:type owl:Class ;
-                                 rdfs:subClassOf :Taco .
+SubClassOf(:Taco_Salad :Fast_Food_Salad)
 
+# Class: :Taquito_with_Cheese (:Taquito_with_Cheese)
 
-###  http://sbmi.uth.edu/ontology/offf#Natural_Flavors
-:Natural_Flavors rdf:type owl:Class ;
-                 rdfs:subClassOf :Ingredient .
+SubClassOf(:Taquito_with_Cheese :Fast_Food_Breakfast_Item)
+SubClassOf(:Taquito_with_Cheese :Fast_Food_Taco)
 
+# Class: :Tea (:Tea)
 
-###  http://sbmi.uth.edu/ontology/offf#Non-Dairy_Dilly_Bar
-:Non-Dairy_Dilly_Bar rdf:type owl:Class ;
-                     rdfs:subClassOf :Ice_Cream .
+SubClassOf(:Tea :Fast_Food_Beverage)
 
+# Class: :Third_Pound_Double_Patty_Cheeseburger (:Third_Pound_Double_Patty_Cheeseburger)
 
-###  http://sbmi.uth.edu/ontology/offf#NutritionalFact
-:NutritionalFact rdf:type owl:Class .
+SubClassOf(:Third_Pound_Double_Patty_Cheeseburger :Cheeseburger)
 
+# Class: :Third_Pound_Hamburger (:Third_Pound_Hamburger)
 
-###  http://sbmi.uth.edu/ontology/offf#Nutritional_Component
-:Nutritional_Component rdf:type owl:Class .
+SubClassOf(:Third_Pound_Hamburger :Hamburger)
 
+# Class: :Tiramisu_Shake (:Tiramisu_Shake)
 
-###  http://sbmi.uth.edu/ontology/offf#Oatmeal_Bar
-:Oatmeal_Bar rdf:type owl:Class ;
-             rdfs:subClassOf :Sides .
+SubClassOf(:Tiramisu_Shake :Shake)
 
+# Class: :Tomato_Ingredient (:Tomato_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Onion_Rings
-:Onion_Rings rdf:type owl:Class ;
-             rdfs:subClassOf :Sides .
+SubClassOf(:Tomato_Ingredient :Food_Ingredient)
 
+# Class: :Trans_Fat_Data (:Trans_Fat_Data)
 
-###  http://sbmi.uth.edu/ontology/offf#Onion_Rings_Dairy_Queen
-:Onion_Rings_Dairy_Queen rdf:type owl:Class ;
-                         rdfs:subClassOf :Onion_Rings .
+SubClassOf(:Trans_Fat_Data :Fat_Data)
 
+# Class: :Triple_Chocolate_Brownie (:Triple_Chocolate_Brownie)
 
-###  http://sbmi.uth.edu/ontology/offf#Onion_Rings_Whataburgers
-:Onion_Rings_Whataburgers rdf:type owl:Class ;
-                          rdfs:subClassOf :Onion_Rings .
+SubClassOf(:Triple_Chocolate_Brownie :Brownie)
 
+# Class: :Triple_Patty_Hamburger (:Triple_Patty_Hamburger)
 
-###  http://sbmi.uth.edu/ontology/offf#Onions
-:Onions rdf:type owl:Class ;
-        rdfs:subClassOf :Ingredient .
+SubClassOf(:Triple_Patty_Hamburger :Hamburger)
 
+# Class: :Tropical_Berry_Lemonade (:Tropical_Berry_Lemonade)
 
-###  http://sbmi.uth.edu/ontology/offf#Orange_Juice
-:Orange_Juice rdf:type owl:Class ;
-              rdfs:subClassOf :Fruit_Juice .
+SubClassOf(:Tropical_Berry_Lemonade :Lemonade)
 
+# Class: :Tumeric_Ingredient (:Tumeric_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Orange_Julius_Original
-:Orange_Julius_Original rdf:type owl:Class ;
-                        rdfs:subClassOf :Julius_Original .
+SubClassOf(:Tumeric_Ingredient :Food_Ingredient)
 
+# Class: :Turkey_BLT_Sandwich (:Turkey_BLT_Sandwich)
 
-###  http://sbmi.uth.edu/ontology/offf#Oreo_Blizzard_Cake
-:Oreo_Blizzard_Cake rdf:type owl:Class ;
-                    rdfs:subClassOf :Blizzard_Cake .
+SubClassOf(:Turkey_BLT_Sandwich :Bacon_Lettuce_and_Tomato_Sandwich)
 
+# Class: :Unsweetened_Tea (:Unsweetened_Tea)
 
-###  http://sbmi.uth.edu/ontology/offf#Oreo_Cheesecake_Blizzard_Treat
-:Oreo_Cheesecake_Blizzard_Treat rdf:type owl:Class ;
-                                rdfs:subClassOf :Blizzard_Treat .
+SubClassOf(:Unsweetened_Tea :Tea)
 
+# Class: :Vanilla_Frosty_Cookie_Sundae (:Vanilla_Frosty_Cookie_Sundae)
 
-###  http://sbmi.uth.edu/ontology/offf#Oreo_Cookie_Blizzard_Treat
-:Oreo_Cookie_Blizzard_Treat rdf:type owl:Class ;
-                            rdfs:subClassOf :Blizzard_Treat .
+SubClassOf(:Vanilla_Frosty_Cookie_Sundae :Sundae)
 
+# Class: :Vanilla_MooLatte (:Vanilla_MooLatte)
 
-###  http://sbmi.uth.edu/ontology/offf#Oreo_Fudge_Brownie_Blizzard_Treat
-:Oreo_Fudge_Brownie_Blizzard_Treat rdf:type owl:Class ;
-                                   rdfs:subClassOf :Blizzard_Treat .
+SubClassOf(:Vanilla_MooLatte :Cold_Coffee)
+SubClassOf(:Vanilla_MooLatte :Latte)
 
+# Class: :Vanilla_Shake (:Vanilla_Shake)
 
-###  http://sbmi.uth.edu/ontology/offf#Oreo_Mini
-:Oreo_Mini rdf:type owl:Class ;
-           rdfs:subClassOf :Mini_Blizzard_Cake .
+SubClassOf(:Vanilla_Shake :Shake)
 
+# Class: :Vegetarian_Burrito (:Vegetarian_Burrito)
 
-###  http://sbmi.uth.edu/ontology/offf#Pancake_Platter_Whataburgers
-:Pancake_Platter_Whataburgers rdf:type owl:Class ;
-                              rdfs:subClassOf :Platter .
+SubClassOf(:Vegetarian_Burrito :Fast_Food_Burrito)
 
+# Class: :Vinegar_Ingredient (:Vinegar_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Pancakes
-:Pancakes rdf:type owl:Class ;
-          rdfs:subClassOf :Breakfast_on_a_Bun_Whataburgers .
+SubClassOf(:Vinegar_Ingredient :Food_Ingredient)
 
+# Class: :Vitamin_A (:Vitamin_A)
 
-###  http://sbmi.uth.edu/ontology/offf#Paprika
-:Paprika rdf:type owl:Class ;
-         rdfs:subClassOf :Ingredient .
+SubClassOf(:Vitamin_A :Minerals_Data)
 
+# Class: :Vitamin_C (:Vitamin_C)
 
-###  http://sbmi.uth.edu/ontology/offf#Parmesan_Caesar_Chicken
-:Parmesan_Caesar_Chicken rdf:type owl:Class ;
-                         rdfs:subClassOf :Salad .
+SubClassOf(:Vitamin_C :Minerals_Data)
 
+# Class: :Vitamin_D (:Vitamin_D)
 
-###  http://sbmi.uth.edu/ontology/offf#Parmesan_Caesar_Chicken_Salad_Dressing_Datum
-:Parmesan_Caesar_Chicken_Salad_Dressing_Datum rdf:type owl:Class ;
-                                              rdfs:subClassOf :Salad_Dressing .
+SubClassOf(:Vitamin_D :Minerals_Data)
 
+# Class: :Waffle_Potato_Chips (:Waffle_Potato_Chips)
 
-###  http://sbmi.uth.edu/ontology/offf#Peach
-:Peach rdf:type owl:Class ;
-       rdfs:subClassOf :Lemonade .
+SubClassOf(:Waffle_Potato_Chips :Fast_Food_Sides)
 
+# Class: :Water_Ingredient (:Water_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Peanut_Butter_Parfait
-:Peanut_Butter_Parfait rdf:type owl:Class ;
-                       rdfs:subClassOf :Royal_Treats .
+SubClassOf(:Water_Ingredient :Food_Ingredient)
 
+# Class: :Wonder_Woman_Cookie_Collision_Blizzard_Cake (:Wonder_Woman_Cookie_Collision_Blizzard_Cake)
 
-###  http://sbmi.uth.edu/ontology/offf#Peanut_Butter_Shake
-:Peanut_Butter_Shake rdf:type owl:Class ;
-                     rdfs:subClassOf :Shake .
+AnnotationAssertion(owl:deprecated :Wonder_Woman_Cookie_Collision_Blizzard_Cake "true"^^xsd:boolean)
+SubClassOf(:Wonder_Woman_Cookie_Collision_Blizzard_Cake :Blizzard_Cake)
 
+# Class: :Yeast_Ingredient (:Yeast_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Peanut_Butter_Sundae
-:Peanut_Butter_Sundae rdf:type owl:Class ;
-                      rdfs:subClassOf :Sundae .
+SubClassOf(:Yeast_Ingredient :Food_Ingredient)
 
+# Class: :disodium_dihydrogen_pyrophosphate_Ingredient (:disodium_dihydrogen_pyrophosphate_Ingredient)
 
-###  http://sbmi.uth.edu/ontology/offf#Peanut_oil
-:Peanut_oil rdf:type owl:Class ;
-            rdfs:subClassOf :Ingredient .
+SubClassOf(:disodium_dihydrogen_pyrophosphate_Ingredient :Food_Ingredient)
 
+# Class: <http://sbmi.uth.edu/ontology/offf#Big_Breakfast_McDonald's> (<http://sbmi.uth.edu/ontology/offf#Big_Breakfast_McDonald's>)
 
-###  http://sbmi.uth.edu/ontology/offf#Pepper
-:Pepper rdf:type owl:Class ;
-        rdfs:subClassOf :Ingredient .
+SubClassOf(<http://sbmi.uth.edu/ontology/offf#Big_Breakfast_McDonald's> :Breakfast_Platter)
 
+# Class: <http://sbmi.uth.edu/ontology/offf#M&M_DQ_Treatzza_Pizza> (<http://sbmi.uth.edu/ontology/offf#M&M_DQ_Treatzza_Pizza>)
 
-###  http://sbmi.uth.edu/ontology/offf#Pico_de_Gallo_Burger
-:Pico_de_Gallo_Burger rdf:type owl:Class ;
-                      rdfs:subClassOf :Hamburger .
+AnnotationAssertion(owl:deprecated <http://sbmi.uth.edu/ontology/offf#M&M_DQ_Treatzza_Pizza> "true"^^xsd:boolean)
+SubClassOf(<http://sbmi.uth.edu/ontology/offf#M&M_DQ_Treatzza_Pizza> :DQ_Treatzza_Pizza)
 
+# Class: <http://sbmi.uth.edu/ontology/offf#Reese's_Mini_Blizzard_Cake> (<http://sbmi.uth.edu/ontology/offf#Reese's_Mini_Blizzard_Cake>)
 
-###  http://sbmi.uth.edu/ontology/offf#Pie
-:Pie rdf:type owl:Class ;
-     rdfs:subClassOf :Dessert .
+AnnotationAssertion(owl:deprecated <http://sbmi.uth.edu/ontology/offf#Reese's_Mini_Blizzard_Cake> "true"^^xsd:boolean)
+SubClassOf(<http://sbmi.uth.edu/ontology/offf#Reese's_Mini_Blizzard_Cake> :Mini_Blizzard_Cake)
 
+# Class: <http://sbmi.uth.edu/ontology/offf#Reese's_Peanut_Butter_Cups_DQ_Treatzza_Pizza> (<http://sbmi.uth.edu/ontology/offf#Reese's_Peanut_Butter_Cups_DQ_Treatzza_Pizza>)
 
-###  http://sbmi.uth.edu/ontology/offf#Pineapple_Sundae
-:Pineapple_Sundae rdf:type owl:Class ;
-                  rdfs:subClassOf :Sundae .
+AnnotationAssertion(owl:deprecated <http://sbmi.uth.edu/ontology/offf#Reese's_Peanut_Butter_Cups_DQ_Treatzza_Pizza> "true"^^xsd:boolean)
+SubClassOf(<http://sbmi.uth.edu/ontology/offf#Reese's_Peanut_Butter_Cups_DQ_Treatzza_Pizza> :DQ_Treatzza_Pizza)
 
 
-###  http://sbmi.uth.edu/ontology/offf#Platter
-:Platter rdf:type owl:Class ;
-         rdfs:subClassOf :Breakfast .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Potassium
-:Potassium rdf:type owl:Class ;
-           rdfs:subClassOf :Minerals_Data .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Potassium_sorbate
-:Potassium_sorbate rdf:type owl:Class ;
-                   rdfs:subClassOf :Ingredient .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Potatoes
-:Potatoes rdf:type owl:Class ;
-          rdfs:subClassOf :Ingredient .
-
-
-###  http://sbmi.uth.edu/ontology/offf#PremiumRoastCoffee
-:PremiumRoastCoffee rdf:type owl:Class ;
-                    rdfs:subClassOf :Coffee_Fact .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Pretzel
-:Pretzel rdf:type owl:Class ;
-         rdfs:subClassOf :Sides .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Pretzel_Sticks_with_Zesty_Queso
-:Pretzel_Sticks_with_Zesty_Queso rdf:type owl:Class ;
-                                 rdfs:subClassOf :Pretzel .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Protein_Data
-:Protein_Data rdf:type owl:Class ;
-              rdfs:subClassOf :Nutritional_Component .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Quarter_Pounder_with_Cheese_Bacon
-:Quarter_Pounder_with_Cheese_Bacon rdf:type owl:Class ;
-                                   rdfs:subClassOf :Hamburger .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Quarter_Pounder_with_Cheese_Deluxe
-:Quarter_Pounder_with_Cheese_Deluxe rdf:type owl:Class ;
-                                    rdfs:subClassOf :Hamburger .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Quarter_Pounder_with_Cheese_bacon_McDonalds
-:Quarter_Pounder_with_Cheese_bacon_McDonalds rdf:type owl:Class ;
-                                             rdfs:subClassOf :Bacon_burger .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Ranch
-:Ranch rdf:type owl:Class ;
-       rdfs:subClassOf :Condiment .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Raspberry_Fudge_Bliss_Blizzard_Cake
-:Raspberry_Fudge_Bliss_Blizzard_Cake rdf:type owl:Class ;
-                                     rdfs:subClassOf :Blizzard_Cake .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Raspberry_Fudge_Bliss_Blizzard_Treat
-:Raspberry_Fudge_Bliss_Blizzard_Treat rdf:type owl:Class ;
-                                      rdfs:subClassOf :Blizzard_Treat .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Reduced_Sugar_Low_Fat_Milk_Jug
-:Reduced_Sugar_Low_Fat_Milk_Jug rdf:type owl:Class ;
-                                rdfs:subClassOf :Milk .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Reese_Peanut_Butter_Cup_Blizzard_Cake
-:Reese_Peanut_Butter_Cup_Blizzard_Cake rdf:type owl:Class ;
-                                       rdfs:subClassOf :Blizzard_Cake .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Royal_Rocky_Road_Trip_Blizzard_Treat
-:Royal_Rocky_Road_Trip_Blizzard_Treat rdf:type owl:Class ;
-                                      rdfs:subClassOf :Blizzard_Treat .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Royal_Treats
-:Royal_Treats rdf:type owl:Class ;
-              rdfs:subClassOf :Ice_Cream .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Salad
-:Salad rdf:type owl:Class ;
-       rdfs:subClassOf :Fast_Food_Fact .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Salad_Dressing
-:Salad_Dressing rdf:type owl:Class ;
-                rdfs:subClassOf :Condiment .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Salt
-:Salt rdf:type owl:Class ;
-      rdfs:subClassOf :Ingredient .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Sandwich
-:Sandwich rdf:type owl:Class ;
-          rdfs:subClassOf :Fast_Food_Fact .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Saturated_Fat_Data
-:Saturated_Fat_Data rdf:type owl:Class ;
-                    rdfs:subClassOf :Fat_Data .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Sausage_Biscuit
-:Sausage_Biscuit rdf:type owl:Class ;
-                 rdfs:subClassOf :Biscuit .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Sausage_Biscuit_with_Egg
-:Sausage_Biscuit_with_Egg rdf:type owl:Class ;
-                          rdfs:subClassOf :Biscuit .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Sausage_Burrito
-:Sausage_Burrito rdf:type owl:Class ;
-                 rdfs:subClassOf :Burritos .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Sausage_Egg_and_Cheese_Burrito
-:Sausage_Egg_and_Cheese_Burrito rdf:type owl:Class ;
-                                rdfs:subClassOf :Burrito .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Sausage_Egg_and_Cheese_McGriddles
-:Sausage_Egg_and_Cheese_McGriddles rdf:type owl:Class ;
-                                   rdfs:subClassOf :McGriddles .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Sausage_Egg_and_Swiss_Croissant
-:Sausage_Egg_and_Swiss_Croissant rdf:type owl:Class ;
-                                 rdfs:subClassOf :Croissant .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Sausage_McGriddles
-:Sausage_McGriddles rdf:type owl:Class ;
-                    rdfs:subClassOf :McGriddles .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Sausage_McMuffin
-:Sausage_McMuffin rdf:type owl:Class ;
-                  rdfs:subClassOf :McMuffin .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Sausage_McMuffin_with_Egg
-:Sausage_McMuffin_with_Egg rdf:type owl:Class ;
-                           rdfs:subClassOf :McMuffin .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Seasoned_Potatoes
-:Seasoned_Potatoes rdf:type owl:Class ;
-                   rdfs:subClassOf :Sides .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Serving_Size_Data
-:Serving_Size_Data rdf:type owl:Class ;
-                   rdfs:subClassOf :Nutritional_Component .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Shake
-:Shake rdf:type owl:Class ;
-       rdfs:subClassOf :Fast_Food_Beverage_Fact .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Shredded_Chicken_Burrito
-:Shredded_Chicken_Burrito rdf:type owl:Class ;
-                          rdfs:subClassOf :Burrito .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Side_Salad
-:Side_Salad rdf:type owl:Class ;
-            rdfs:subClassOf :Sides .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Side_Salad_Chick_Fil_A
-:Side_Salad_Chick_Fil_A rdf:type owl:Class ;
-                        rdfs:subClassOf :Side_Salad .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Side_Salad_Dairy_Queen
-:Side_Salad_Dairy_Queen rdf:type owl:Class ;
-                        rdfs:subClassOf :Side_Salad .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Sides
-:Sides rdf:type owl:Class ;
-       rdfs:subClassOf :Fast_Food_Fact .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Silicon_Dioxide
-:Silicon_Dioxide rdf:type owl:Class ;
-                 rdfs:subClassOf :Ingredient .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Slushie
-:Slushie rdf:type owl:Class ;
-         rdfs:subClassOf :Fast_Food_Beverage_Fact .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Smoothie
-:Smoothie rdf:type owl:Class ;
-          rdfs:subClassOf :Fast_Food_Beverage_Fact .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Snickers_Blizzard_Treat
-:Snickers_Blizzard_Treat rdf:type owl:Class ;
-                         rdfs:subClassOf :Blizzard_Treat .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Sodium
-:Sodium rdf:type owl:Class ;
-        rdfs:subClassOf :Minerals_Data .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Sodium_Citrate
-:Sodium_Citrate rdf:type owl:Class ;
-                rdfs:subClassOf :Ingredient .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Sodium_Data
-:Sodium_Data rdf:type owl:Class ;
-             rdfs:subClassOf :Nutritional_Component .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Soft_Drink
-:Soft_Drink rdf:type owl:Class ;
-            rdfs:subClassOf :Fast_Food_Beverage_Fact .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Soft_Taco
-:Soft_Taco rdf:type owl:Class ;
-           rdfs:subClassOf :Taco .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Soft_Taco_Supreme_Beef_Taco
-:Soft_Taco_Supreme_Beef_Taco rdf:type owl:Class ;
-                             rdfs:subClassOf :Taco .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Son_of_Baconator
-:Son_of_Baconator rdf:type owl:Class ;
-                  rdfs:subClassOf :Bacon_burger .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Sorbic_Acid
-:Sorbic_Acid rdf:type owl:Class ;
-             rdfs:subClassOf :Ingredient .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Southwest_Avocado_Chicken
-:Southwest_Avocado_Chicken rdf:type owl:Class ;
-                           rdfs:subClassOf :Salad .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Southwest_Avocado_Chicken_Salad_Dressing
-:Southwest_Avocado_Chicken_Salad_Dressing rdf:type owl:Class ;
-                                          rdfs:subClassOf :Salad_Dressing .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Soybean_Oil
-:Soybean_Oil rdf:type owl:Class ;
-             rdfs:subClassOf :Ingredient .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Spicy
-:Spicy rdf:type owl:Class ;
-       rdfs:subClassOf :Chicken_Sandwich .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Spicy_Asiago_Ranch_Club
-:Spicy_Asiago_Ranch_Club rdf:type owl:Class ;
-                         rdfs:subClassOf :Chicken_Sandwich .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Spicy_Avocado_BLT_Chicken_Sandwich
-:Spicy_Avocado_BLT_Chicken_Sandwich rdf:type owl:Class ;
-                                    rdfs:subClassOf :Chicken_Sandwich .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Spicy_Barbeque_Chicken_Sandwich
-:Spicy_Barbeque_Chicken_Sandwich rdf:type owl:Class ;
-                                 rdfs:subClassOf :Chicken_Sandwich .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Spicy_Chicken_Nugget
-:Spicy_Chicken_Nugget rdf:type owl:Class ;
-                      rdfs:subClassOf :Chicken .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Spicy_Chicken_Sandwich
-:Spicy_Chicken_Sandwich rdf:type owl:Class ;
-                        rdfs:subClassOf :Chicken_Sandwich .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Spicy_Potato_Soft_Taco
-:Spicy_Potato_Soft_Taco rdf:type owl:Class ;
-                        rdfs:subClassOf :Taco .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Spicy_Southwest
-:Spicy_Southwest rdf:type owl:Class ;
-                 rdfs:subClassOf :Salad .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Sprite
-:Sprite rdf:type owl:Class ;
-        rdfs:subClassOf :Soft_Drink .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Sriracha
-:Sriracha rdf:type owl:Class ;
-          rdfs:subClassOf :Condiment .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Strawberry
-:Strawberry rdf:type owl:Class ;
-            rdfs:subClassOf :Shake .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Strawberry_Banana
-:Strawberry_Banana rdf:type owl:Class ;
-                   rdfs:subClassOf :Smoothie .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Strawberry_Banana_Julius_Original
-:Strawberry_Banana_Julius_Original rdf:type owl:Class ;
-                                   rdfs:subClassOf :Julius_Original .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Strawberry_Sundae
-:Strawberry_Sundae rdf:type owl:Class ;
-                   rdfs:subClassOf :Sundae .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Strawberry_malt
-:Strawberry_malt rdf:type owl:Class ;
-                 rdfs:subClassOf :Shake .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Strawberrys
-:Strawberrys rdf:type owl:Class ;
-             rdfs:subClassOf :Lemonade .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Sugar
-:Sugar rdf:type owl:Class ;
-       rdfs:subClassOf :Ingredient .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Sugar_Data
-:Sugar_Data rdf:type owl:Class ;
-            rdfs:subClassOf :Carbohydrates_Data .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Sugars
-:Sugars rdf:type owl:Class ;
-        rdfs:subClassOf :Cookie .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Summer_Strawberry
-:Summer_Strawberry rdf:type owl:Class ;
-                   rdfs:subClassOf :Salad .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Summer_Strawberry_Salad_Dressing
-:Summer_Strawberry_Salad_Dressing rdf:type owl:Class ;
-                                  rdfs:subClassOf :Salad_Dressing .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Sundae
-:Sundae rdf:type owl:Class ;
-        rdfs:subClassOf :Ice_Cream .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Sunflower_lecithin
-:Sunflower_lecithin rdf:type owl:Class ;
-                    rdfs:subClassOf :Ingredient .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Sunflower_oil
-:Sunflower_oil rdf:type owl:Class ;
-               rdfs:subClassOf :Ingredient .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Sweet_Tea
-:Sweet_Tea rdf:type owl:Class ;
-           rdfs:subClassOf :Tea .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Sweet_and_Spicy_Sriracha
-:Sweet_and_Spicy_Sriracha rdf:type owl:Class ;
-                          rdfs:subClassOf :Sriracha .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Taco
-:Taco rdf:type owl:Class ;
-      rdfs:subClassOf :Fast_Food_Fact .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Tacos
-:Tacos rdf:type owl:Class ;
-       rdfs:subClassOf :Salad .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Taquito_with_Cheese
-:Taquito_with_Cheese rdf:type owl:Class ;
-                     rdfs:subClassOf :Breakfast .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Tea
-:Tea rdf:type owl:Class ;
-     rdfs:subClassOf :Fast_Food_Beverage_Fact .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Tiramisu
-:Tiramisu rdf:type owl:Class ;
-          rdfs:subClassOf :Shake .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Tomato
-:Tomato rdf:type owl:Class ;
-        rdfs:subClassOf :Ingredient .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Trans_Fat_Data
-:Trans_Fat_Data rdf:type owl:Class ;
-                rdfs:subClassOf :Fat_Data .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Triple_Chocolate_Brownie
-:Triple_Chocolate_Brownie rdf:type owl:Class ;
-                          rdfs:subClassOf :Hot_Desserts_a_la_Mode .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Triple_Meat_Whataburger
-:Triple_Meat_Whataburger rdf:type owl:Class ;
-                         rdfs:subClassOf :Hamburger .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Tropical_Berry
-:Tropical_Berry rdf:type owl:Class ;
-                rdfs:subClassOf :Lemonade .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Tumeric
-:Tumeric rdf:type owl:Class ;
-         rdfs:subClassOf :Ingredient .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Turkey_BLT_Sandwich
-:Turkey_BLT_Sandwich rdf:type owl:Class ;
-                     rdfs:subClassOf :Bacon_burger .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Turtle_Pecan_Cluster_Blizzard_Treat
-:Turtle_Pecan_Cluster_Blizzard_Treat rdf:type owl:Class ;
-                                     rdfs:subClassOf :Blizzard_Treat .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Vanilla
-:Vanilla rdf:type owl:Class ;
-         rdfs:subClassOf :Shake .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Vanilla_Frosty_Cookie_Sundae
-:Vanilla_Frosty_Cookie_Sundae rdf:type owl:Class ;
-                              rdfs:subClassOf :Sundae .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Vanilla_MooLatte
-:Vanilla_MooLatte rdf:type owl:Class ;
-                  rdfs:subClassOf :Latte .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Vinegar
-:Vinegar rdf:type owl:Class ;
-         rdfs:subClassOf :Ingredient .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Vitamin_A
-:Vitamin_A rdf:type owl:Class ;
-           rdfs:subClassOf :Minerals_Data .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Vitamin_C
-:Vitamin_C rdf:type owl:Class ;
-           rdfs:subClassOf :Minerals_Data .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Vitamin_D
-:Vitamin_D rdf:type owl:Class ;
-           rdfs:subClassOf :Minerals_Data .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Waffle_Potato_Chips
-:Waffle_Potato_Chips rdf:type owl:Class ;
-                     rdfs:subClassOf :Sides .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Water
-:Water rdf:type owl:Class ;
-       rdfs:subClassOf :Ingredient .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Whataburger
-:Whataburger rdf:type owl:Class ;
-             rdfs:subClassOf :Hamburger .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Whataburger_Jr
-:Whataburger_Jr rdf:type owl:Class ;
-                rdfs:subClassOf :Hamburger .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Wonder_Woman_Cookie_Collision_Blizzard_Cake
-:Wonder_Woman_Cookie_Collision_Blizzard_Cake rdf:type owl:Class ;
-                                             rdfs:subClassOf :Blizzard_Cake .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Wonder_Woman_Cookie_Collision_Blizzard_Treat
-:Wonder_Woman_Cookie_Collision_Blizzard_Treat rdf:type owl:Class ;
-                                              rdfs:subClassOf :Blizzard_Treat .
-
-
-###  http://sbmi.uth.edu/ontology/offf#World_Famous_Fries
-:World_Famous_Fries rdf:type owl:Class ;
-                    rdfs:subClassOf :Fries .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Yeast
-:Yeast rdf:type owl:Class ;
-       rdfs:subClassOf :Ingredient .
-
-
-###  http://sbmi.uth.edu/ontology/offf#dextrose
-:dextrose rdf:type owl:Class ;
-          rdfs:subClassOf :Ingredient .
-
-
-###  http://sbmi.uth.edu/ontology/offf#disodium_dihydrogen_pyrophosphate
-:disodium_dihydrogen_pyrophosphate rdf:type owl:Class ;
-                                   rdfs:subClassOf :Ingredient .
-
-
-###  http://sbmi.uth.edu/ontology/offf#1/3_lb_double_Cheeseburger
-<http://sbmi.uth.edu/ontology/offf#1/3_lb_double_Cheeseburger> rdf:type owl:Class ;
-                                                               rdfs:subClassOf :Cheeseburger .
-
-
-###  http://sbmi.uth.edu/ontology/offf#7-layer
-<http://sbmi.uth.edu/ontology/offf#7-layer> rdf:type owl:Class ;
-                                            rdfs:subClassOf :Burrito .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Americano_McDonald's
-<http://sbmi.uth.edu/ontology/offf#Americano_McDonald's> rdf:type owl:Class ;
-                                                         rdfs:subClassOf :Americano .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Big_Breakfast_McDonald's
-<http://sbmi.uth.edu/ontology/offf#Big_Breakfast_McDonald's> rdf:type owl:Class ;
-                                                             rdfs:subClassOf :Breakfast .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Biscuit_(Whataburger's)
-<http://sbmi.uth.edu/ontology/offf#Biscuit_(Whataburger's)> rdf:type owl:Class ;
-                                                            rdfs:subClassOf :Biscuit .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Biscuit_Sandwich_(Whataburger's)
-<http://sbmi.uth.edu/ontology/offf#Biscuit_Sandwich_(Whataburger's)> rdf:type owl:Class ;
-                                                                     rdfs:subClassOf :Biscuit .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Dave's_Double
-<http://sbmi.uth.edu/ontology/offf#Dave's_Double> rdf:type owl:Class ;
-                                                  rdfs:subClassOf :Hamburger .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Dave's_Single
-<http://sbmi.uth.edu/ontology/offf#Dave's_Single> rdf:type owl:Class ;
-                                                  rdfs:subClassOf :Hamburger .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Dave's_Triple
-<http://sbmi.uth.edu/ontology/offf#Dave's_Triple> rdf:type owl:Class ;
-                                                  rdfs:subClassOf :Hamburger .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Honey_Butter_Chicken_Biscuit_(Whataburger's)
-<http://sbmi.uth.edu/ontology/offf#Honey_Butter_Chicken_Biscuit_(Whataburger's)> rdf:type owl:Class ;
-                                                                                 rdfs:subClassOf :Biscuit .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Hot_Chocolate_McDonald's
-<http://sbmi.uth.edu/ontology/offf#Hot_Chocolate_McDonald's> rdf:type owl:Class ;
-                                                             rdfs:subClassOf :Hot_Chocolate .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Latte_McDonald's
-<http://sbmi.uth.edu/ontology/offf#Latte_McDonald's> rdf:type owl:Class ;
-                                                     rdfs:subClassOf :Latte .
-
-
-###  http://sbmi.uth.edu/ontology/offf#M&M_DQ_Treatzza_Pizza
-<http://sbmi.uth.edu/ontology/offf#M&M_DQ_Treatzza_Pizza> rdf:type owl:Class ;
-                                                          rdfs:subClassOf :DQ_Treatzza_Pizza .
-
-
-###  http://sbmi.uth.edu/ontology/offf#M&M_Milk_Chocolate_Candies_Blizzard_Treat
-<http://sbmi.uth.edu/ontology/offf#M&M_Milk_Chocolate_Candies_Blizzard_Treat> rdf:type owl:Class ;
-                                                                              rdfs:subClassOf :Blizzard_Treat .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Reese's_Mini_Blizzard_Cake
-<http://sbmi.uth.edu/ontology/offf#Reese's_Mini_Blizzard_Cake> rdf:type owl:Class ;
-                                                               rdfs:subClassOf :Mini_Blizzard_Cake .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Reese's_Peanut_Butter_Cup_Blizzard_Treat
-<http://sbmi.uth.edu/ontology/offf#Reese's_Peanut_Butter_Cup_Blizzard_Treat> rdf:type owl:Class ;
-                                                                             rdfs:subClassOf :Blizzard_Treat .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Reese's_Peanut_Butter_Cups_DQ_Treatzza_Pizza
-<http://sbmi.uth.edu/ontology/offf#Reese's_Peanut_Butter_Cups_DQ_Treatzza_Pizza> rdf:type owl:Class ;
-                                                                                 rdfs:subClassOf :DQ_Treatzza_Pizza .
-
-
-###  http://sbmi.uth.edu/ontology/offf#S'Mores_Blizzard_Treat
-<http://sbmi.uth.edu/ontology/offf#S'Mores_Blizzard_Treat> rdf:type owl:Class ;
-                                                           rdfs:subClassOf :Blizzard_Treat .
-
-
-###  http://sbmi.uth.edu/ontology/offf#Strawberry_Wendy's
-<http://sbmi.uth.edu/ontology/offf#Strawberry_Wendy's> rdf:type owl:Class ;
-                                                       rdfs:subClassOf :Fruit .
-
-
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+)
